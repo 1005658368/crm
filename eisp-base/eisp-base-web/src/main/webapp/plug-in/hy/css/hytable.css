@@ -1,0 +1,93 @@
+
+.datagrid-body {
+	height: 100%;
+}
+
+.cssModel .datagrid-cell {
+	padding: 0px;
+	height: auto;
+}
+.cssModel .datagrid-cell-check input {
+	margin: 0;
+	padding: 0;
+	width: 15px;
+	height: 18px;
+}
+.cssModel input {
+	padding: 6px;
+	width: 100%;
+	height: 26px;
+}
+.cssModel select {
+	margin-right: 10px;
+	width: 100%;
+	height: 26px;
+}
+.cssModel .Wdate {
+	height: 26px;
+	min-width:90px;
+}
+.cssModel td>div {
+	line-height:26px;
+	padding:0 7px;
+	white-space:nowrap;
+}
+.cssModel *[readonly],.cssModel *[disabled] {
+	border: 0;
+	color:#000;
+}
+.cssModel thead tr {
+	line-height: 30px;
+	display:none;
+}
+.cssModel thead tr td {
+	white-space:nowrap;
+	background:#f4f4f4;
+	padding:0 7px;
+}
+.cssModel thead tr td:first-child {
+	padding:0;
+}
+.cssModel thead tr td[data-status='no'] {
+	display:none;
+}
+.cssModel tbody tr:hover {
+	background: #eaf2ff;
+}
+.cssModel tbody tr.activeModel {
+	background: #FBEC88;
+}
+.cssModel tbody tr:hover *[readonly],.cssModel tbody tr:hover *[disabled] {
+	background: #eaf2ff;
+}
+.cssModel tbody tr.activeModel *[readonly],.cssModel tbody tr.activeModel *[disabled] {
+	background: #FBEC88;
+}
+/* 
+.cssModel tbody tr td:hover {
+	background: #54A5D5;
+	color: #ffffff;
+}
+.cssModel tbody tr td:hover input {
+	background: #54A5D5;
+	color: #ffffff;
+}
+.cssModel tbody tr td:hover select {
+	background: #54A5D5;
+}
+.cssModel tbody tr.activeModel td:hover *[readonly],.cssModel tbody tr.activeModel td:hover *[disabled] {
+	background: #54A5D5;
+	color: #ffffff;
+}
+ */
+
+.cssModelPage {
+    background: #e6eef8;
+    text-align: center;
+}
+.cssModelPage span {
+    line-height: 30px;
+    cursor:pointer;
+}
+
+

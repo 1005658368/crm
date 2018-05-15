@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.cxl</groupId>
+    <artifactId>eisp-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <description>定义公共信息及依赖版本管理</description>
+
+    <modules>
+        <module>../eisp-base</module>
+        <module>../eisp-core</module>
+    </modules>
+
+    <properties>
+        <currnt.version>1.0.1-SNAPSHOT</currnt.version>
+        <unified-project.version>${project.version}</unified-project.version>
+        <java.version>1.7</java.version>
+        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+        <javaee.version>6.0</javaee.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jodd.version>3.3.7</jodd.version>
+        <!--test -->
+        <junit.version>4.12</junit.version>
+        <mockito.version>1.10.19</mockito.version>
+
+        <!--utils -->
+        <commons-lang3.version>3.4</commons-lang3.version>
+        <guava.version>19.0</guava.version>
+        <gson.version>2.2.4</gson.version>
+        <jackson.version>2.6.5</jackson.version>
+        <jackson.version>2.6.6</jackson.version>
+        <httpclient.version>4.4</httpclient.version>
+        <fastjson.version>1.1.37</fastjson.version>
+        <freemarker.version>2.3.22</freemarker.version>
+        <java-xmlbuilder>0.4</java-xmlbuilder>
+        <!-- log -->
+        <log4j.version>1.2.16</log4j.version>
+        <slf4j.version>1.6.1</slf4j.version>
+        <logback.version>1.1.6</logback.version>
+        <logstash.logback.version>4.7</logstash.logback.version>
+        <!--  ognl  -->
+        <ognl.version>3.0.4</ognl.version>
+        <!--email-->
+        <commons-email.version>1.2</commons-email.version>
+        <!--spring -->
+        <spring-framework.version>3.1.1.RELEASE</spring-framework.version>
+        <spring-webmvc.version>${spring-framework.version}</spring-webmvc.version>
+        <spring-orm.version>${spring-framework.version}</spring-orm.version>
+        <spring-test.version>${spring-framework.version}</spring-test.version>
+        <spring-aop.version>${spring-framework.version}</spring-aop.version>
+        <spring-security.version>3.2.5.RELEASE</spring-security.version>
+        <spring-rabbit.version>1.5.5.RELEASE</spring-rabbit.version>
+
+        <!--hibernate -->
+        <hibernate.version>4.1.0.Final</hibernate.version>
+        <hibernate-common-annotations.version>4.0.1.Final</hibernate-common-annotations.version>
+        <hibernate-jpa.version>1.0.1.Final</hibernate-jpa.version>
+        <hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
+        <hibernate_validator.version>4.2.0.Final</hibernate_validator.version>
+        <cglib.version>2.1_3</cglib.version>
+        <el.version>2.2.4</el.version>
+        <mysql-connector-java.version>5.1.35</mysql-connector-java.version>
+        <druid.version>1.0.16</druid.version>
+        <jta.version>1.1</jta.version>
+
+        <!--activiti-->
+        <activiti-engine.version>5.15.1</activiti-engine.version>
+        <activiti-spring.version>5.15.1</activiti-spring.version>
+
+
+        <!-- addition(附加) -->
+        <amqp-client.version>3.3.4</amqp-client.version>
+        <javax.servlet-api.version>2.5</javax.servlet-api.version>
+        <tomcat-catalina.version>7.0.55</tomcat-catalina.version>
+        <jstl.version>1.2</jstl.version>
+        <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
+        <standard.version>1.1.2</standard.version>
+        <lucene.version>4.10.0</lucene.version>
+        <commons-net.version>3.3</commons-net.version>
+        <commons-httpclient.version>3.1</commons-httpclient.version>
+        <commons-vfs2.version>2.0</commons-vfs2.version>
+        <zookeeper.version>3.4.6</zookeeper.version>
+        <zkclient.version>0.1</zkclient.version>
+        <curator-framework.version>1.1.10</curator-framework.version>
+        <commons-dbcp2.version>2.1</commons-dbcp2.version>
+        <dubbo.version>2.8.4</dubbo.version>
+        <commons-beanutils.version>1.9.2</commons-beanutils.version>
+        <commons-codec.version>1.10</commons-codec.version>
+        <commons-io.version>2.4</commons-io.version>
+        <codelogger.utils.version>1.0.0</codelogger.utils.version>
+        <commons-configuration.version>1.10</commons-configuration.version>
+        <apache.curator-framework.version>2.6.0</apache.curator-framework.version>
+        <dom4j.version>1.6.1</dom4j.version>
+        <pinyin4j.version>2.5.0</pinyin4j.version>
+        <jedis.version>2.9.0</jedis.version>
+        <redisson.version>2.2.24</redisson.version>
+        <commons-fileupload.version>1.3.1</commons-fileupload.version>
+        <commons-pool2.version>2.2</commons-pool2.version>
+        <metrics-ganglia.version>3.1.0</metrics-ganglia.version>
+        <qiniu.sdk.version>6.1.9</qiniu.sdk.version>
+        <commons-logging.version>1.1.1</commons-logging.version>
+        <jaxen.version>1.1.6</jaxen.version>
+        <jaxrpc.version>2.1</jaxrpc.version>
+        <poi.version>3.9</poi.version>
+        <easypoi.version>2.0.5</easypoi.version>
+        <xmlbeans.version>2.3.0</xmlbeans.version>
+        <metrics-core.version>3.0.2</metrics-core.version>
+        <metrics-spring.version>3.1.3</metrics-spring.version>
+        <tomcat-monitor.version>1.0</tomcat-monitor.version>
+        <jodconverter.version>3.0-beta-4</jodconverter.version>
+        <aspectjrt.version>1.6.11</aspectjrt.version>
+
+        <!-- webservice依赖包 -->
+        <webservice.XmlSchema>1.4.7</webservice.XmlSchema>
+        <webservice.wsdl4j>1.6.2</webservice.wsdl4j>
+        <webservice.wodenimpldom>1.0M9</webservice.wodenimpldom>
+        <webservice.wodenapi>1.0M9</webservice.wodenapi>
+        <webservice.neethi>3.0.2</webservice.neethi>
+        <webservice.httpcore>4.4</webservice.httpcore>
+        <webservice.commonshttpclient>3.1</webservice.commonshttpclient>
+        <webservice.backportutilconcurrent>3.1</webservice.backportutilconcurrent>
+        <webservice.axis2transportlocal>1.6.2</webservice.axis2transportlocal>
+        <webservice.axis2transporthttp>1.6.2</webservice.axis2transporthttp>
+        <webservice.axis2kernel>1.6.2</webservice.axis2kernel>
+        <webservice.axis2adb>1.6.2</webservice.axis2adb>
+        <webservice.axiomimpl>1.2.13</webservice.axiomimpl>
+        <webservice.axiomapi>1.2.13</webservice.axiomapi>
+        <webservice.annogen>0.1.0</webservice.annogen>
+        <axis.version>1.4</axis.version>
+
+        <org.codehaus.jackso.version>1.9.9</org.codehaus.jackso.version>
+        <aliyun-mns.version>1.1.5</aliyun-mns.version>
+        <aliyun-oss.version>2.2.3</aliyun-oss.version>
+        <jsp-api.version>2.0</jsp-api.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <!-- specify UTF-8, ISO-8859-1 or any other file encoding -->
+                    <encoding>UTF-8</encoding>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>p12</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.sql</include>
+                    <include>**/*.ftl</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+
+
+    <distributionManagement>
+        <repository>
+            <id>dev.biz-united.com.cn</id>
+            <name>dev.biz-united.com.cn-releases</name>
+            <url>http://dev.biz-united.com.cn:18080/artifactory/ext-release-local</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>internal.centre</id>
+            <name>Internal Maven Repository</name>
+            <url>http://dev.biz-united.com.cn:18080/artifactory/repo</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>http://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spy</id>
+            <name>Spy Repository</name>
+            <url>http://files.couchbase.com/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>xerces</id>
+            <name>xerces</name>
+            <url>https://xerces.apache.org/xerces2-j/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>proxool</id>
+            <name>proxool</name>
+            <url>http://proxool.cvs.sourceforge.net/viewvc/proxool/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>oschinaMavenThirdparty</id>
+            <name>oschinaMavenThirdparty</name>
+            <url>http://maven.oschina.net/content/repositories/thirdparty/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <profiles>
+        <profile>
+            <id>internal</id>
+            <properties>
+                <profileName>merge_dev</profileName>
+                <enableSign>false</enableSign>
+
+
+                <!--超时时间-->
+                <dubbo.timeout>1200000</dubbo.timeout>
+                <!--服务分组-->
+                <dubbo.group>cxl100</dubbo.group>
+                <!--客户端检查-->
+                <dubbo.check>false</dubbo.check>
+                <dubbo.port.actcheck>20800</dubbo.port.actcheck>
+                <dubbo.port.budget>20801</dubbo.port.budget>
+                <dubbo.port.mdm>20802</dubbo.port.mdm>
+                <dubbo.port.other>20803</dubbo.port.other>
+                <dubbo.port.planning>20804</dubbo.port.planning>
+                <dubbo.port.price>20805</dubbo.port.price>
+                <dubbo.port.qrcode>20806</dubbo.port.qrcode>
+                <dubbo.port.report>20807</dubbo.port.report>
+                <dubbo.port.saleplan>20808</dubbo.port.saleplan>
+                <dubbo.port.sfa>20809</dubbo.port.sfa>
+                <!--zookeeper -->
+                <redis.config.localpath>connection/redis.properties</redis.config.localpath>
+                <redis.config.is_by_zookeeper_start>false</redis.config.is_by_zookeeper_start>
+
+                <message.config.localpath>connection/message.properties</message.config.localpath>
+                <message.config.is_by_zookeeper_start>false</message.config.is_by_zookeeper_start>
+
+                <zookeeper.url>zookeeper://10.2.201.76:2181</zookeeper.url>
+                <!--rest discover -->
+                <restRegExr>10(\\.\\d+){3}</restRegExr>
+                <soa.idcIndex>1</soa.idcIndex>
+
+                <!-- redis -->
+                <redis.maxTotal>120</redis.maxTotal>
+                <redis.maxIdle>10</redis.maxIdle>
+                <redis.minIdle>1</redis.minIdle>
+                <redis.testOnBorrow>true</redis.testOnBorrow>
+                <redis.maxWaitMillis>1000</redis.maxWaitMillis>
+                <redis.testOnReturn>true</redis.testOnReturn>
+                <redis.testWhileIdle>true</redis.testWhileIdle>
+                <redis.timeBetweenEvictionRunsMillis>30000</redis.timeBetweenEvictionRunsMillis>
+                <redis.minEvictableIdleTimeMillis>30000</redis.minEvictableIdleTimeMillis>
+                <redis.socketTimeout>2000</redis.socketTimeout>
+                <redis.host>42.120.19.224@</redis.host>
+                <redis.port>6379@</redis.port>
+                <redis.name></redis.name>
+                <redis.password>20070201</redis.password>
+
+                <!--datasources -->
+                <jdbc.driver>oracle.jdbc.driver.OracleDriver</jdbc.driver>
+                <!--<jdbc.url>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST =10.2.201.78)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = eisp)))</jdbc.url>-->
+                <!--<jdbc.username>sqprd</jdbc.username>-->
+                <!--<jdbc.url>jdbc:oracle:thin:@10.2.201.74:1521:eispdev</jdbc.url>-->
+                <jdbc.url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</jdbc.url>
+                <jdbc.username>SANQUANSYNC</jdbc.username>
+                <jdbc.password>oracle</jdbc.password>
+                <jdbc.initialSize>2</jdbc.initialSize>
+                <jdbc.minIdle>2</jdbc.minIdle>
+                <jdbc.maxActive>100</jdbc.maxActive>
+                <jdbc.maxWait>60000</jdbc.maxWait>
+                <jdbc.timeBetweenEvictionRunsMillis>60000</jdbc.timeBetweenEvictionRunsMillis>
+                <jdbc.minEvictableIdleTimeMillis>300000</jdbc.minEvictableIdleTimeMillis>
+                <jdbc.poolPreparedStatements>true</jdbc.poolPreparedStatements>
+                <jdbc.maxPoolPreparedStatementPerConnectionSize>30</jdbc.maxPoolPreparedStatementPerConnectionSize>
+                <show_sql>true</show_sql>
+                <show_minidao_sql>true</show_minidao_sql>
+
+                <!-- sysConfig -->
+                <imgPath>http://tpm.sanquan.com:8088/lopalimages/</imgPath>
+                <restwebservice>http://localhost:8103/eisp/</restwebservice>
+                <webserviceUserName>ZHANGJL</webserviceUserName>
+                <webservicePassWord>SAP654321</webservicePassWord>
+                <webserviceUrlStr>http://erpdev.sanquan.com:8000/sap/bc/srt/rfc/sap/zws_tpm_rfc_default/100/zws_tpm_rfc_default/zws_tpm_rfc_default</webserviceUrlStr>
+                <webserviceUrl>dev</webserviceUrl>
+                <str_job>notme</str_job>
+                <jsVersion>2</jsVersion>
+                <isOfficial>0</isOfficial>
+                <createWordUrl>/home/crm/eisp_photos/eisp_photos/downloadtemp/</createWordUrl>
+                <ishttps>http</ishttps>
+                <mq.brokerurl>failover:(tcp://10.2.201.75:61616?wireFormat.maxInactivityDuration=0)</mq.brokerurl>
+            </properties>
+        </profile>
+    </profiles>
+
+</project>

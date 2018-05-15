@@ -1,0 +1,40 @@
+.title {
+	font-size: 30px;
+	text-algin: center;
+}
+
+tr {
+	line-height: 170%;
+}
+
+#claim_item {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.tableBox{
+	border: 1px solid #999;
+	height: 25px;
+	line-height: 25px;
+	border-collapse:collapse;
+}
+.tableBox td {
+	border: 1px solid #999;
+	height: 25px;
+	line-height: 25px;
+}
+.app {
+		font-size: 20px;
+}
+
+tr{
+	font-size: 12px;
+}
+.td1 {  text-align: center; height: 25px; border: 2px; border-color: black;} 
+.td2 {  text-align: center; height: 25px; border: 2px; border-color: black;}
+.tr1 {  text-align: center; height: 30px; border: 2px; border-color: black;}
+.tr2 {  text-align: center; height: 35px; border: 2px; border-color: black;}
+.tr3 {  text-align: center; height: 35px; border: none;}
+.title0 {  height: 25px; sfont-size: 14px; font-weight: bold; text-align: left; padding-left: 18px;color: #FFFFFF;background: url("<c:url value='/images/blue.png'/>") no-repeat;}
+.fontClass {
+	font-size: 6px;
+}

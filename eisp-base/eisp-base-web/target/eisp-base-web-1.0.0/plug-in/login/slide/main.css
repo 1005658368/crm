@@ -1,0 +1,210 @@
+@charset "utf-8";
+.login-box {
+	height: 0;
+	margin: 0 auto;
+	position: relative;
+	width: 990px;
+	zoom: 1;
+	z-index: 120;
+}
+#loginIframe {
+	position: absolute;
+	right: 0;
+	top: 60px;
+}
+.login-aside {
+	background: rgba(0, 0, 0, 0);
+ filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4c000000', EndColorStr='#4c000000');
+	width: 240px;
+	padding: 30px;
+	color: #FFF;
+}
+:root .login-aside {
+ filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000');
+}
+.login-aside .form-title {
+	font-family: "Microsoft Yahei";
+	font-size: 22px;
+	width: 100%;
+	border-bottom: #CCC 1px solid;
+	padding-bottom: 10px;
+	line-height: 24px;
+}
+.login-input {
+	border: 1px solid #A09E99;
+	padding: 4px 3px;
+	width: 234px;
+	height: 22px;
+	line-height: 22px;
+}
+.login-pass {
+	border: 1px solid #A09E99;
+	padding: 4px 3px;
+	width: 234px;
+	height: 22px;
+	line-height: 22px;
+}
+.form-label {
+	padding: 4px 0px;
+	margin: 0px;
+	display: block;
+	color: #666;
+}
+.login-btn {
+	margin: 15px 0;
+}
+.login-btn-con {
+	display: inline-block;
+	zoom: 1;
+	width: 112px;
+	height: 38px;
+	line-height: 38px;
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	background: url(../image/login/btn02.png) no-repeat 0 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+.login-btn-con, .login-help {
+	float: left;
+	display: inline;
+}
+.login-help a {
+	line-height: 38px;
+	color: #FFF;
+	padding-left: 40px;
+}
+.error-box {
+	margin: 10px auto;
+	padding: 3px 5px 3px 25px;
+	background: url(../image/login/con04.png) 5px 5px no-repeat #FFFFD0;
+}
+.error-box {
+	margin: 15px auto 0;
+	padding: 5px 10px 5px 25px;
+	width: 202px;
+	line-height: 15px;
+	background-color: #FFFFD0;
+	color: red;
+}
+.user-info {
+	margin: 16px 0 0 0;
+	font-size: 14px;
+}
+.user-info .user-info-account {
+	margin: 8px 0 0 0;
+	font-weight: 700;
+	font-family: verdana, Arial;
+	color: #FF9700;
+	word-break: break-all;
+}
+.user-info .user-info-button {
+    margin: 25px 0 0 0;
+}
+.user-info .user-info-button a {
+	display: inline-block;
+	zoom: 1;
+	width: 235px;
+	height: 38px;
+	line-height: 38px;
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	background: url(../image/login/btn03.png) no-repeat 0 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+.slide {
+	margin-top: -3px;
+}
+.slideimages {
+	position: relative;
+	height: 400px;
+	width: auto;
+	cursor: pointer;
+	z-index: -1;
+}
+.slideimages div {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 400px;
+	overflow: hidden;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.slide-number-box {
+	width: 1000px;
+	height: 0;
+	margin: 0 auto;
+	position: relative;
+}
+.slidetabs {
+	position: absolute;
+	bottom: 8px;
+	left: 45%;
+	z-index: 1;
+}
+.slidetabs a {
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin: 5px;
+	
+	display: block;
+	font-size: 1px;
+}
+.slidetabs a.current {
+	
+}
+.benefits-grid {
+	color: #8d9095;
+	margin-top: 45px;
+}
+.border-right {
+	border-right: #E1E5E7 1px solid;
+}
+.benefits-grid .benefits-item {
+	float: left;
+	display: inline;
+	width: 206px;
+	padding-left: 22px;
+	padding-right: 20px;
+}
+.benefits-icon-1, .benefits-icon-2, .benefits-icon-3, .benefits-icon-4 {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 25px;
+}
+.benefits-icon-1 {
+	background: url(../image/login/con02.png) no-repeat 0 0;
+}
+.benefits-icon-2 {
+	background: url(../image/login/con02.png) no-repeat 0 -64px;
+}
+.benefits-icon-3 {
+	background: url(../image/login/con02.png) no-repeat 0 -129px;
+}
+.benefits-icon-4 {
+	background: url(../image/login/con02.png) no-repeat 0 -194px;
+}
+.benefits-grid .benefits-item h4 {
+	font-size: 20px;
+	font-family: "Microsoft Yahei";
+	text-align: center;
+	color: #444;
+	margin-bottom: 15px;
+}
+.benefits-grid .benefits-item p {
+	font-size: 14px;
+	line-height: 22px;
+}

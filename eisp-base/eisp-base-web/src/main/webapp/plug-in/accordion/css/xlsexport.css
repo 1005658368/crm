@@ -1,0 +1,101 @@
+*{
+				margin: 0px;
+				padding: 0px;
+				list-style-type: none;
+			}
+			input,button{
+				outline: none;
+			}
+			.g-popup{
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				background-color: rgba(0,0,0,0.3);
+				display: none;
+			}
+			.g-popup>ul{
+				width:300px;
+				background-color: #fff;
+				box-shadow: 0px 0px 10px #ccc;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 10%;
+				border-radius: 5px;
+				border-top-left-radius: 10px;
+			}
+			.g-popup .title{
+				display: inline-block;
+				width:278px;
+				line-height: 40px;
+				padding: 0px 10px;
+				background:linear-gradient(to bottom,#9ECEF2 0%,#8EBFEA 50%,#619DDB 100%);
+				text-align: left;
+				color: #fff;
+				border: 1px solid #3F7BB9;
+				border-top-color: #7CB3EC;
+				border-top-left-radius: 10px;
+				border-top-right-radius:5px;
+			}
+			.g-popup .title>img{
+				width:18px;
+				float: right;
+				position: relative;
+				top: 10px;
+				cursor: pointer;
+			}
+			.g-popup>ul div{
+				height: 127px;
+				padding: 0px 15px;
+				border: 1px solid #929397;
+				border-top:none;
+				border-radius:5px;
+				border-top-right-radius: 0px;
+				border-top-left-radius: 0px;
+				padding-top: 30px;
+			}
+			.g-popup .btn-zu{
+				margin-top:40px;
+				text-align: right;
+			}
+			.g-popup .radio-zu>span{
+				width:30%;
+				display: inline-block;
+			}
+			.g-popup .radio-zu>span>input{
+				cursor: pointer;
+			}			
+			.btn-zu>button{
+				padding: 10px;
+				width: 80px;
+				border-radius: 3px;
+				cursor: pointer;
+				margin-left: 10px;				
+			}
+			#cancel{
+				border: 1px solid #929BA4;
+				background-color: #F7F7F7;
+				background: linear-gradient(to bottom,#F7F7F7 0%,#EEEEEE 50%,#E8E4E5 100%);
+				box-shadow: 0px 0px 10px #A0BFDB;
+			}
+			#countersign{
+				color: #fff;
+				border: 1px solid #23699D;
+				background-color: #35B4EB;
+				background: linear-gradient(to bottom,#35B4EB 0%,#2B9FDC 50%,#208DD2 100%);
+				
+			}
+			/*单选框*/
+			.base-radio{
+				-webkit-appearance: none;
+				appearance: none;
+			 	width: 18px;
+			 	height: 18px;
+			 	border: 1px solid #ccc;
+			 	border-radius: 50%;
+			 	vertical-align: middle;
+			}
+			.base-radio:checked{
+				background: url(../images/yes_r.png) no-repeat;
+				background-size: 17px;
+				border-color: transparent;
+			}

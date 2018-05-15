@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eisp-base/eisp-base.iml" filepath="$PROJECT_DIR$/eisp-base/eisp-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eisp-base/eisp-base-api/eisp-base-api.iml" filepath="$PROJECT_DIR$/eisp-base/eisp-base-api/eisp-base-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eisp-base/eisp-base-service/eisp-base-service.iml" filepath="$PROJECT_DIR$/eisp-base/eisp-base-service/eisp-base-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eisp-base/eisp-base-web/eisp-base-web.iml" filepath="$PROJECT_DIR$/eisp-base/eisp-base-web/eisp-base-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eisp-core/eisp-core.iml" filepath="$PROJECT_DIR$/eisp-core/eisp-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eisp-parent/eisp-parent.iml" filepath="$PROJECT_DIR$/eisp-parent/eisp-parent.iml" />
+    </modules>
+  </component>
+</project>

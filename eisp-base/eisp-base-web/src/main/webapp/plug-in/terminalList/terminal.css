@@ -1,0 +1,167 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+  	font-family: Tahoma,Verdana,微软雅黑,新宋体;
+  	list-style-type: none; 	
+}
+a{
+	text-decoration: none;
+}
+.rebateCash{
+	min-width: 920px;
+}
+/*输入框区域样式*/
+.rebateCash_center{
+	background: #F4F4F4;
+	padding: 0 10px;
+/* padding: 10px!important; */
+/* 	border-bottom: 1px solid #ccc; */
+}
+/*浮动*/
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+/*清除浮动*/
+.clear_both::after{
+	content: "";
+	display: block;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+/*按钮*/
+/*-按钮样式开始---*/
+
+/*-按钮图标---*/
+.btn_ul>li>a>img{
+	position: relative;
+	top: 3px;
+}
+/*-按钮图标大小-*/
+.btn_ul>li>span>img{
+	width: 15px;
+	height: 14px;	
+	position: relative;
+	top: 1px;
+}
+/*--右侧按钮---*/
+.btn_right_li{
+	position: relative;
+	top: 5px;
+	display: inline-block;
+}
+.btn_background>img{
+	position: relative;
+	top: 3px;
+}
+.btn_background{
+	display: inline-block;
+	width: 60px;
+	border: 1px solid #A5A5A5;
+	padding: 2px 15px;
+	text-align: center;
+	border-radius: 15px;
+	line-height: 20px;
+	color: #444;
+    background: -moz-linear-gradient(top,  #FEFEFE 0%,#F4F4F4 50%,#DFDFDF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(50%,#F4F4F4),color-stop(100%,#DFDFDF));
+    background: -webkit-linear-gradient(top,  #FEFEFE 0%,#DFDFDF 100%);
+    background: -o-linear-gradient(top,  #FEFEFE 0%,#F4F4F4 50%,#DFDFDF 100%);
+    background: -ms-linear-gradient(top,  #FEFEFE 0%,#F4F4F4 50%,#DFDFDF 100%);
+    background: linear-gradient(to bottom,  #FEFEFE 0%,#F4F4F4 50%,#DFDFDF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFEFE',startColorstr='#DFDFDF', endColorstr='#F3F3F3',GradientType=0 );
+}
+.btn_background:hover{
+	color: #0000FF;
+	 background: #000000;
+    background: -moz-linear-gradient(top,  #CECECE 0%,#DADADA 50%,#E5E5E5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#CECECE), color-stop(50%,#DADADA),color-stop(100%,#E5E5E5));
+    background: -webkit-linear-gradient(top,  #CECECE 0%,#E5E5E5 100%);
+    background: -o-linear-gradient(top,  #CECECE 0%,#DADADA 50%,#E5E5E5 100%);
+    background: -ms-linear-gradient(top,  #CECECE 0%,#DADADA 50%,#E5E5E5 100%);
+    background: linear-gradient(to bottom,  #CECECE 0%,#DADADA 50%,#E5E5E5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CECECE',startColorstr='#DADADA', endColorstr='#E5E5E5',GradientType=0 );
+}
+:root .gradient{filter:none;}
+/*-----左侧按钮------*/
+.btn_ul>.btn_left_li{
+	line-height: 20px;
+	position: relative;
+	top: 10px;
+}
+
+/*-----按钮样式结束-----*/
+.text_ul>li>ul>li{
+	float: left;
+    width: 20%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.text_ul>li>ul>li>label{
+	display: inline-block;
+	width: 20%;
+	min-width: 100px;
+	text-align: right;
+}
+.text_ul>li{
+	width:100%;
+	
+}
+/*文本框*/
+input[type=text]{
+	padding: 0px 2px;
+	border:1px solid #54A5D5;
+	width:116px;
+	height:20px;
+}
+/*日期框*/
+input[type=date]{
+	border:1px solid #54A5D5;
+	width:120px;
+	height: 18px;
+}
+/*下拉框*/
+.rebateCash_center select{
+	border:1px solid #54A5D5;
+	width:116px;
+	height:20px;
+	line-height:16px;
+	padding:0px;
+}
+
+/*修改下拉框默认样式*/
+select{
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	-ms-appearance:none;
+	background: url(webapp/plug-in/terminalList/img/down_1.png) no-repeat 100%;
+	background-size:15px 20px;
+	background-color: #fff;
+}
+select:hover{
+	background: url(webapp/plug-in/terminalList/img/down_2.png) no-repeat 100%;
+	background-color: #fff;
+}
+select:focus{
+	background: url(webapp/plug-in/terminalList/img/down_2.png) no-repeat 100%;
+	background-color: #fff;
+}
+.btn_ul>li{
+	display: inline-block;
+	margin-left:5px;
+	line-height: 40px;
+}
+
+
+
+
+
+

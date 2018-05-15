@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+.topbar {
+	height: 31px;
+}
+.topbar .section {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+.topbar .mininavLeft{
+	float:left;
+	display:inline;
+	height: 30px;
+	line-height: 30px;
+}
+.topbar .mininavLeft .mobileIcon{
+	background:url(../image/login/con01.png) no-repeat 0 1px;
+	padding-left:15px;
+}
+.topbar .mininavRight {
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	display: inline;
+	color:#BBBBBB;
+}
+.topbar .mininavRight span{
+	color:#666;
+}
+.topbar .mininavRight .accountout{
+	padding-right:8px;
+}
+.topbar .mininavRight .home{
+	padding:0 8px;
+}
+.topbar a {
+	color: #666;
+	text-decoration:none;
+}
+.header{
+	width:100%;
+	margin-top:-10px;
+	
+}
+.header .wf-wrap{
+	width:1000px;
+	height:35px;
+	margin:20px auto 0;
+	padding-bottom:10px;
+}
+.branding{
+	float:left;
+}
+.navigation{
+	float:right;
+	margin-left:230px
+}
+
+.navigation .main-nav li{
+	float:left;
+	font-family:"Microsoft Yahei";
+	text-align:center;
+	margin:0 5px;
+}
+.navigation .main-nav li a{
+	color:#333;	
+	font-size:17px;
+	width: 85px;
+    height: 35px;
+	display:inline-block;
+	line-height:35px;
+	padding:0 3px;	
+}
+.main-nav li.acts{
+    background-color: #2a83ed;
+}
+.main-nav li.acts a{
+	color:#FFF;
+}
+.main-nav li a:hover{
+    background-color: #2a83ed;
+	text-decoration:none;
+	color:#FFF;
+}
+.footer{
+	position: fixed; 
+	bottom: 0px; 
+	_bottom: auto;    
+	z-index: 10000;    
+    _position: absolute;  
+	 overflow: visible;
+    _top: expression(documentElement.scrollTop+documentElement.clientHeight-this.offsetHeight); 
+	width:100%; 
+	color: #8d9095;
+	background: #f7f7f8 none repeat center top;
+	border-top: 1px solid rgba(218,222,225,0.85);
+	height:15px; 
+	line-height:30px; 
+	padding:5px 0 15px;
+}
+.footer .wf-wrap{
+	width:1000px;
+	margin:0 auto;
+}
+.branding-bottom{
+	float:left;
+	display:inline;
+	vertical-align:middle;
+	line-height:30px;
+}
+.wf-float-left{
+	float:left;
+	display:inline;
+}
+.footer .wf-td{
+	float:right;
+	display:inline;
+}
+.footer .wf-td a{
+	color:#8d9095;
+	padding:0 8px;
+}

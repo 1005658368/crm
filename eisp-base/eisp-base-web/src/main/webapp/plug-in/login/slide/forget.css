@@ -1,0 +1,113 @@
+@charset "utf-8";
+.content {
+	width: 990px;
+	margin: 0 auto;
+	min-height: 600px;
+	_height: 600px;
+}
+.hd {
+	padding: 35px 0;
+}
+.hd_title {
+	margin-right: 10px;
+	font-size: 25px;
+	font-family: "Microsoft Yahei";
+	font-weight: 100;
+}
+.password {
+	padding: 15px 40px;
+	font-size: 14px;
+}
+.flowsteps .num3 li {
+	width: 40%;
+}
+.flowsteps .num3 .last {
+	width: 108px;
+}
+.flowsteps li {
+	float: left;
+	display: inline;
+	height: 48px;
+	font-size: 14px;
+	line-height: 23px;
+	color: #8b8b8b;
+	list-style: none;
+	background: url(../image/login/line.png) repeat-x 0 13px;
+}
+.flowsteps span {
+	float: left;
+	background: #FFF;
+	width: auto;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: #999;
+	padding: 0 8px
+}
+.flowsteps .current span div {
+	color: #007FFF;
+}
+.flowsteps .current span strong {
+	background: url(../image/login/con03.png) no-repeat 0 0;
+	width: 25px;
+	color: #FFF;
+	text-align: center;
+	display: inline-block;
+	line-height: 25px;
+}
+.flowsteps em {
+	display: block;
+	text-align: center;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+}
+.flowsteps .current, .flowsteps .current span {
+	color: #007FFF;
+}
+.password .kv_list {
+	padding-left: 180px;
+	padding-top: 35px;
+}
+.kv_item {
+	padding: 20px 0 5px 120px;
+	width: 400px;
+}
+.password .kv_label {
+	vertical-align: middle;
+	font-size: 16px;
+}
+.kv_label {
+	display: inline;
+	float: left;
+	width: 110px;
+	margin-left: -120px;
+	text-align: right;
+	line-height: 36px;
+}
+.i_text {
+	width: 220px;
+	margin: 0;
+	padding: 4px 3px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #C8C8C8;
+}
+.err_input {
+	border-color: #F00;
+}
+.btn {
+	display: inline-block;
+	zoom: 1;
+	width: 112px;
+	height: 38px;
+	line-height: 38px;
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	background: url(../image/login/btn01.png) no-repeat 0 0;
+	cursor: pointer;
+	overflow: hidden;
+}

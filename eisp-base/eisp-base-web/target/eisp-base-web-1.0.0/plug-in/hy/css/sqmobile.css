@@ -1,0 +1,24 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,img{margin:0;padding:0;border:0;outline:0;font-size:16px;font-family:微软雅黑;color:#333333;}
+li{list-style-type:none;}
+a{text-decoration:none; color:#ffffff;}
+button,img {border: 0px;}
+select {outline-color: #ccc;}
+textarea {outline-color: #ccc;}
+input:checked {border: 0px;}
+a {text-decoration: none;color: #777;cursor: pointer;}
+a:hover {text-decoration: none;color: #777;}
+a:focus {text-decoration: none;outline: none;}
+body {width: 900px;padding:20px 50px 50px;margin: 0 auto;word-wrap:break-word;}
+
+header {position:relative;height:80px;font-size:30px;line-height:80px;text-align:center;}
+.cont {position: absolute;top: 0;left: 0;height: 80px;}
+.cont img {max-height:80px;}
+.principal {}
+.principal table {width:100%;}
+.principal table tr {}
+.principal table tr td {}
+.list {}
+.list table {width:100%;border-collapse:collapse;}
+.list table tr {}
+.list table tr td {border:1px solid #cccccc;text-align:center;height:35px;}
+.list .bold {font-weight:bold;}

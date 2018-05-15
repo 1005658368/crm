@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 引入datasource配置 -->
+    <!-- 数据源配置 -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+        <property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcl" />
+        <property name="username" value="SANQUANSYNC" />
+        <property name="password" value="oracle" />
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="2" />
+        <property name="minIdle" value="2" />
+        <property name="maxActive" value="100" />
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="60000" />
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+        <!-- 打开removeAbandoned功能 -->
+        <property name="removeAbandoned" value="true" />
+        <!-- 1800秒，也就是30分钟 -->
+        <property name="removeAbandonedTimeout" value="3600" />
+        <!-- 关闭abanded连接时输出错误日志 -->
+        <property name="logAbandoned" value="true" />
+        <property name="filters" value="stat" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testOnReturn" value="false" />
+        <property name="testWhileIdle" value="true" />
+        <property name="validationQuery" value="SELECT 1 FROM DUAL" />
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="entityInterceptor" ref="hiberAspect" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">none</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>
+            </props>
+        </property>
+        <!-- 注解方式配置 -->
+        <property name="packagesToScan">
+            <list>
+                <value>org.crmframework.*</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- JDBC配置 -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="dataSource" />
+        </property>
+    </bean>
+
+    <!-- JDBC配置 -->
+    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+    <!-- Hibernate MiniDao -->
+    <bean id="miniDaoHiberCommonDao" class="org.crmframework.core.minidao.hibernate.dao.impl.GenericBaseCommonDao">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+
+    <!-- MiniDao动态代理类 -->
+    <bean id="miniDaoFastQueryService" class="org.crmframework.core.minidao.service.MiniDaoFastQueryService" scope="prototype">
+        <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+        <property name="namedParameterJdbcTemplate" ref="namedParameterJdbcTemplate"></property>
+        <!-- 数据库类型,用于自动生成分页SQL -->
+        <property name="dbType" value="${jdbc.dbType}"></property>
+    </bean>
+
+    <!-- MiniDao动态代理类 -->
+    <bean id="miniDaoHandler" class="org.crmframework.core.minidao.factory.MiniDaoBeanScannerConfigurer">
+        <!-- 是使用什么字母做关键字Map的关键字 默认值origin 即和sql保持一致,lower小写(推荐),upper 大写 -->
+        <property name="keyType" value="lower"></property>
+        <!-- 格式化sql -->
+        <property name="formatSql" value="true"></property>
+        <!-- 输出sql -->
+        <property name="showSql" value="true"></property>
+        <!-- 数据库类型,用于自动生成分页SQL -->
+        <property name="dbType" value="oracle"></property>
+        <!-- dao地址,配置符合spring方式 -->
+        <property name="basePackage" value="org.crmframework,cn.com.biz"></property>
+        <!-- 使用的注解,默认是Minidao,推荐 Repository-->
+        <!-- <property name="annotation" value="org.springframework.stereotype.Repository"></property> -->
+    </bean>
+
+    <bean id="hiberAspect" class="org.crmframework.core.aop.HiberAspect" ></bean>
+
+    <!-- 配置事物管理器，在*ServiceImpl里写@Transactional就可以启用事物管理 -->
+    <bean name="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!-- 开启注解事务 -->
+    <tx:annotation-driven transaction-manager="transactionManager"  proxy-target-class="true" />
+
+</beans>

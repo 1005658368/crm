@@ -1,0 +1,6 @@
+2018-05-15 18:06:09,887 [main] DEBUG test.CTest - cx1
+2018-05-15 18:06:10,753 [main] DEBUG test.CTest - cx2
+2018-05-15 21:34:10,829 [main] DEBUG test.CTest - cx1
+2018-05-15 21:34:11,443 [main] DEBUG test.CTest - cx2
+2018-05-15 23:20:33,785 [main] DEBUG test.CTest - cx1
+2018-05-15 23:20:34,417 [main] DEBUG test.CTest - cx2

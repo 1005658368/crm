@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size:15px;
+    font-family: Tahoma,Verdana,微软雅黑,新宋体;
+    list-style-type: none;
+}
+/*---表格样式公用----*/
+body{
+    padding: 20px 50px;
+    width:auto;
+}
+h1{
+    text-align:center;
+    font-size: 32px;
+    line-height:60px;
+}h1 span{font-size:32px;}
+h6{
+    font-size: 14px;
+    line-height:35px;
+}
+h2{
+    font-size: 14px;
+    line-height:35px;
+    text-align:right;
+}
+h3{
+    font-size: 14px;
+    line-height:35px;
+    text-align:center;
+}
+
+.datatab{border-collapse:collapse; width:100%;border-top:2px solid #000;border-bottom:2px solid #000;}
+.datatab tr {line-height:40px;}
+.datatab tr th {border-bottom:2px solid #000;font-weight: 100;text-align: left;}
+.datatab tr td {padding: 2px 10px;}
+span {padding-bottom: 2px;border-bottom: 1px solid;}
+.grey td {background: #cccccc;}

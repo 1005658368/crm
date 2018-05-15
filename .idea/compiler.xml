@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eisp-base-api" />
+        <module name="eisp-base-service" />
+        <module name="eisp-base-web" />
+        <module name="eisp-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eisp-base" target="1.7" />
+      <module name="eisp-base-api" target="1.7" />
+      <module name="eisp-base-service" target="1.7" />
+      <module name="eisp-base-web" target="1.7" />
+      <module name="eisp-core" target="1.7" />
+      <module name="eisp-parent" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

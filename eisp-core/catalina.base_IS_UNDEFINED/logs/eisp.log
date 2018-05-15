@@ -1,0 +1,135 @@
+2018-05-15 18:06:05,667 [main] INFO  org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class test.CTest]: using defaults.
+2018-05-15 18:06:05,942 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [application-context.xml]
+2018-05-15 18:06:06,659 [main] INFO  org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@612e5caf: startup date [Tue May 15 18:06:06 CST 2018]; root of context hierarchy
+2018-05-15 18:06:06,866 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'miniDaoHandler': replacing [Generic bean: class [org.crmframework.core.minidao.factory.MiniDaoBeanScannerConfigurer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [application-context.xml]] with [Generic bean: class [org.crmframework.core.minidao.aop.MiniDaoHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2018-05-15 18:06:06,962 [main] INFO  org.crmframework.core.minidao.factory.MiniDaoClassPathMapperScanner - register minidao name is org.crmframework.core.minidao.test.dao.TestDao
+2018-05-15 18:06:07,047 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@56a279c: defining beans [commonDao,commonService,systemService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,miniDaoHiberCommonDao,miniDaoFastQueryService,miniDaoHandler,hiberAspect,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,genericBaseCommonDao,testDao]; root of factory hierarchy
+2018-05-15 18:06:08,413 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-05-15 18:06:08,670 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2018-05-15 18:06:08,676 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.1.0.Final}
+2018-05-15 18:06:08,678 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-15 18:06:08,680 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-15 18:06:09,033 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2018-05-15 18:06:09,046 [main] WARN  org.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2018-05-15 18:06:09,049 [main] WARN  org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2018-05-15 18:06:09,052 [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-15 18:06:09,065 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-15 18:06:09,070 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-15 18:06:09,108 [main] INFO  org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+2018-05-15 18:06:09,240 [main] WARN  org.hibernate.id.UUIDHexGenerator - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2018-05-15 18:06:09,872 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [{
+	CreateTime:"2018-05-15 18:06:07",
+	ActiveCount:0,
+	PoolingCount:2,
+	CreateCount:2,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:514408199, ConnectTime:"2018-05-15 18:06:08", UseCount:0, LastActiveTime:"2018-05-15 18:06:08"},
+		{ID:2036921418, ConnectTime:"2018-05-15 18:06:08", UseCount:0, LastActiveTime:"2018-05-15 18:06:08"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+2018-05-15 18:06:09,887 [main] DEBUG test.CTest - cx1
+2018-05-15 18:06:10,513 [main] INFO  org.crmframework.core.minidao.aop.MiniDaoHandler - MiniDao-SQL:
+
+
+    select
+        id as id 
+    from
+        t_s_base_user
+
+2018-05-15 18:06:10,736 [main] INFO  org.crmframework.core.minidao.aop.MiniDaoHandler - MiniDao-SQL:
+
+
+    SELECT
+        U.ID AS ID 
+    FROM
+        T_S_BASE_USER U 
+    WHERE
+        1=1 
+        AND U.ID='356F9B326FA43C97E0534BC9020A2587' 
+        AND U.ID=:vo.id 
+        AND U.ID LIKE '%356F9B326FA43C97E0534BC9020A2587%' 
+        AND U.ID LIKE '%'||:vo.id||'%'
+
+2018-05-15 18:06:10,753 [main] DEBUG test.CTest - cx2
+2018-05-15 18:06:10,755 [Thread-1] INFO  org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@612e5caf: startup date [Tue May 15 18:06:06 CST 2018]; root of context hierarchy
+2018-05-15 18:06:10,756 [Thread-1] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@56a279c: defining beans [commonDao,commonService,systemService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,miniDaoHiberCommonDao,miniDaoFastQueryService,miniDaoHandler,hiberAspect,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,genericBaseCommonDao,testDao]; root of factory hierarchy
+2018-05-15 18:06:10,806 [Thread-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-05-15 21:34:07,592 [main] INFO  org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class test.CTest]: using defaults.
+2018-05-15 21:34:07,771 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [application-context.xml]
+2018-05-15 21:34:08,070 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2018-05-15 21:34:08,147 [main] INFO  org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@764e2837: startup date [Tue May 15 21:34:08 CST 2018]; root of context hierarchy
+2018-05-15 21:34:08,295 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'miniDaoHandler': replacing [Generic bean: class [org.crmframework.core.minidao.factory.MiniDaoBeanScannerConfigurer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [dataSource.xml]] with [Generic bean: class [org.crmframework.core.minidao.aop.MiniDaoHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2018-05-15 21:34:08,379 [main] INFO  org.crmframework.core.minidao.factory.MiniDaoClassPathMapperScanner - register minidao name is org.crmframework.core.minidao.test.dao.TestDao
+2018-05-15 21:34:08,469 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44f330e0: defining beans [commonDao,commonService,systemService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,miniDaoHiberCommonDao,miniDaoFastQueryService,miniDaoHandler,hiberAspect,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,genericBaseCommonDao,testDao]; root of factory hierarchy
+2018-05-15 21:34:09,565 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-05-15 21:34:09,788 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2018-05-15 21:34:09,794 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.1.0.Final}
+2018-05-15 21:34:09,796 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-15 21:34:09,798 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-15 21:34:10,094 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2018-05-15 21:34:10,100 [main] WARN  org.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2018-05-15 21:34:10,102 [main] WARN  org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2018-05-15 21:34:10,104 [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-15 21:34:10,115 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-15 21:34:10,120 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-15 21:34:10,156 [main] INFO  org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+2018-05-15 21:34:10,272 [main] WARN  org.hibernate.id.UUIDHexGenerator - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2018-05-15 21:34:10,816 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [{
+	CreateTime:"2018-05-15 21:34:08",
+	ActiveCount:0,
+	PoolingCount:2,
+	CreateCount:2,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:987288057, ConnectTime:"2018-05-15 21:34:09", UseCount:0, LastActiveTime:"2018-05-15 21:34:09"},
+		{ID:1891717277, ConnectTime:"2018-05-15 21:34:09", UseCount:0, LastActiveTime:"2018-05-15 21:34:09"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+2018-05-15 21:34:10,829 [main] DEBUG test.CTest - cx1
+2018-05-15 21:34:11,443 [main] DEBUG test.CTest - cx2
+2018-05-15 21:34:11,466 [Thread-1] INFO  org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@764e2837: startup date [Tue May 15 21:34:08 CST 2018]; root of context hierarchy
+2018-05-15 21:34:11,489 [Thread-1] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44f330e0: defining beans [commonDao,commonService,systemService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,miniDaoHiberCommonDao,miniDaoFastQueryService,miniDaoHandler,hiberAspect,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,genericBaseCommonDao,testDao]; root of factory hierarchy
+2018-05-15 21:34:11,574 [Thread-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-05-15 23:20:30,442 [main] INFO  org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class test.CTest]: using defaults.
+2018-05-15 23:20:30,561 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [application-context.xml]
+2018-05-15 23:20:30,923 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2018-05-15 23:20:31,016 [main] INFO  org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@70f8b1fc: startup date [Tue May 15 23:20:31 CST 2018]; root of context hierarchy
+2018-05-15 23:20:31,244 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'miniDaoHandler': replacing [Generic bean: class [org.crmframework.core.minidao.factory.MiniDaoBeanScannerConfigurer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [dataSource.xml]] with [Generic bean: class [org.crmframework.core.minidao.aop.MiniDaoHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2018-05-15 23:20:31,333 [main] INFO  org.crmframework.core.minidao.factory.MiniDaoClassPathMapperScanner - register minidao name is org.crmframework.core.minidao.test.dao.TestDao
+2018-05-15 23:20:31,396 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@68c815fe: defining beans [commonDao,commonService,mutiLangService,systemService,applicationContextUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,miniDaoHiberCommonDao,miniDaoFastQueryService,miniDaoHandler,hiberAspect,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,genericBaseCommonDao,testDao]; root of factory hierarchy
+2018-05-15 23:20:32,300 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-05-15 23:20:32,521 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2018-05-15 23:20:32,527 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.1.0.Final}
+2018-05-15 23:20:32,529 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-15 23:20:32,531 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-15 23:20:32,839 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2018-05-15 23:20:32,845 [main] WARN  org.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2018-05-15 23:20:32,846 [main] WARN  org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2018-05-15 23:20:32,848 [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-15 23:20:32,858 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-15 23:20:32,863 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-15 23:20:32,897 [main] INFO  org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+2018-05-15 23:20:33,082 [main] WARN  org.hibernate.id.UUIDHexGenerator - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2018-05-15 23:20:33,764 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [{
+	CreateTime:"2018-05-15 23:20:31",
+	ActiveCount:0,
+	PoolingCount:2,
+	CreateCount:2,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:393169037, ConnectTime:"2018-05-15 23:20:32", UseCount:0, LastActiveTime:"2018-05-15 23:20:32"},
+		{ID:184823040, ConnectTime:"2018-05-15 23:20:32", UseCount:0, LastActiveTime:"2018-05-15 23:20:32"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+2018-05-15 23:20:33,785 [main] DEBUG test.CTest - cx1
+2018-05-15 23:20:34,417 [main] DEBUG test.CTest - cx2
+2018-05-15 23:20:34,422 [Thread-1] INFO  org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@70f8b1fc: startup date [Tue May 15 23:20:31 CST 2018]; root of context hierarchy
+2018-05-15 23:20:34,423 [Thread-1] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@68c815fe: defining beans [commonDao,commonService,mutiLangService,systemService,applicationContextUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,miniDaoHiberCommonDao,miniDaoFastQueryService,miniDaoHandler,hiberAspect,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,genericBaseCommonDao,testDao]; root of factory hierarchy
+2018-05-15 23:20:34,438 [Thread-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

@@ -1,0 +1,173 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+ul li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+.clear_both::after{
+	content: "";
+	display: block;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	clear: both;
+}
+
+.fenster_content{
+	width: 100%;
+	display:inline-block;
+	*margin-top: -1px;
+}
+.fenster_content_right{
+	float: right;
+	width: 84%;
+	*width: 83.9%;
+	height: 550px;
+	box-shadow: 0 0 2px #ccc;
+	background-color: #C0C0C0;
+}
+
+.fenster_content_left{
+	float: left;
+	width:100%;
+	height: 550px;
+}
+
+.fenster_content_left{
+	background-color: #f9f9f9;
+}
+
+a{
+	outline: none;
+}
+img{
+	border:none;
+}
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+.topnav li a span>img{
+	width:9px;
+	height:5px;
+}
+.topnav {
+	width: 100%;
+	padding: 0px 0px;
+	font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;    padding-bottom: 40px;
+}
+ul.topnav {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 0.5em;
+	list-style: none;    margin-bottom: 60px;
+}
+
+ul.topnav li>a{
+	transition: all 0.3s;
+}
+ul.topnav>li>a{
+	cursor: pointer;
+}
+
+
+ul.topnav li>a:hover{
+	background-color: #E7F0FF;
+}
+
+
+
+ul.topnav>li>ul{
+	border-top: 1px solid #e6e6e6;
+}
+
+ul.topnav ul li:last-child{
+	border-bottom: none;
+}
+
+ul.topnav>li{
+	background-color:#f9f9f9;
+	border-bottom: 1px solid #e7e7e2;
+}
+
+ul.topnav>li a {
+	font-size: 14px;
+	padding: 8px 10px;
+	color: #333;
+	display: block;
+	line-height:16px;
+}
+
+ul.topnav>li>a>img{
+}
+
+ul.topnav ul {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+ul.topnav ul li{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+ul.topnav ul li a{
+	padding-left: 30px;
+	font-size: 12px;
+	font-weight: normal;
+	outline:0;
+	color: #000;
+}
+
+ul.topnav ul ul li a{
+	padding-left: 50px;
+}
+
+ul.topnav ul ul ul li a{
+	padding-left: 70px;
+}
+
+ul.topnav ul ul ul ul li a{
+	padding-left: 90px;
+}
+ul.topnav span{
+	float:right;
+	margin-right: 12px;
+	*margin-top: -18px;
+	*margin-right: 23px;
+	
+}
+ul.topnav ul li::after{
+	content: "";
+	display: block;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	clear: both;
+}
+ul.topnav ul ul ul li,ul.topnav ul ul ul ul li,ul.topnav ul li,ul.topnav ul ul li{
+	background-color:#fff;
+	font-weight: normal;
+}
