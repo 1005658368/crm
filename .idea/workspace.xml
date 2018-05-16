@@ -6,7 +6,86 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f21b2a5-4404-49ab-9646-4e976e411bbe" name="Default" comment="" />
+    <list default="true" id="2f21b2a5-4404-49ab-9646-4e976e411bbe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_1_37.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opensymphony_xwork_core_2_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_2_5_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/annotation/CrmEntityTitle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/JdbcDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/SimpleJdbcTemplate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/exception/BusinessException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/AliasToBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/CriteriaQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/CriterionList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/DetachedCriteriaUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/HqlQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/PageList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/Pager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/PagerUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/ICommonDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/IGenericBaseCommonDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/CommonDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/GenericBaseCommonDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceContextHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DynamicDataSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/DynamicDataSourceEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/TSIcon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/DBTypeUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/MyBeanUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ResourceUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ToEntityUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/oConvertUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/AjaxJson.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/DBTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/DataGrid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/ColumnInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/DataTableReturn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/DataTables.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/FilterInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/SortDirection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/SortInfo.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/eisp-base-service-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-core/target/eisp-core-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-core/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/eisp-base-api-1.0.0.jar" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/eisp-base-api-1.0.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-base-service-1.0.0.jar" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-base-service-1.0.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-core-1.0.0.jar" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-core-1.0.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/common/service/impl/CommonServiceImpl.class" afterPath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/common/service/impl/CommonServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.class" afterPath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/tag/easyui/DictSelectTag.class" afterPath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/tag/easyui/DictSelectTag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/eisp_base_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/eisp_base_web_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/eisp-base-service.iml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-service/eisp-base-service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/datasource.xml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/datasource.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/classes/datasource.xml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/classes/datasource.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/eisp-base-web.iml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-web/eisp-base-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/CTest.log" afterPath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/CTest.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/eisp.log" afterPath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/eisp.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/eisp-core.iml" afterPath="$PROJECT_DIR$/eisp-core/eisp-core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/pom.xml" afterPath="$PROJECT_DIR$/eisp-core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/impl/CommonServiceImpl.java" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/impl/CommonServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/IGenericBaseCommonDao.java" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/IGenericBaseCommonDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.java" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml" afterPath="$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/dataSource.xml" afterPath="$PROJECT_DIR$/eisp-core/target/classes/dataSource.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/surefire-reports/TEST-test.CTest.xml" afterPath="$PROJECT_DIR$/eisp-core/target/surefire-reports/TEST-test.CTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/surefire-reports/test.CTest.txt" afterPath="$PROJECT_DIR$/eisp-core/target/surefire-reports/test.CTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-parent/pom.xml" afterPath="$PROJECT_DIR$/eisp-parent/pom.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/eisp-parent/target/" />
     <ignored path="$PROJECT_DIR$/eisp-base/target/" />
     <ignored path="$PROJECT_DIR$/eisp-base/eisp-base-service/target/" />
@@ -33,107 +112,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eisp-parent/pom.xml">
+      <file leaf-file-name="dataSource.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="322" column="10" lean-forward="true" selection-start-line="322" selection-start-column="10" selection-end-line="322" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MutiLangTag.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/tag/easyui/MutiLangTag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MutiLangServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/service/impl/MutiLangServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BrowserUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/BrowserUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContextHolderUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ContextHolderUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="117" column="19" lean-forward="true" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/org/crmframework/base/listener/InitListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eisp-core/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="244" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+            <state relative-caret-position="143">
+              <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -147,24 +130,12 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log</find>
-      <find>log4</find>
-      <find>jackson</find>
-      <find>mappingJacksonHttpMessageConverter</find>
-      <find>fileupload</find>
-      <find>upload</find>
-      <find>servlet</find>
-      <find>BooleanUtils</find>
-      <find>entityInterceptor</find>
-      <find>StringUtil</find>
-      <find>miniDaoFastQueryService</find>
-      <find>MiniDaoLinkedMap</find>
-      <find>miniDaoHiberCommonDao1</find>
       <find>miniDaoHandler</find>
       <find>spring-test</find>
       <find>logback</find>
@@ -180,12 +151,30 @@
       <find>dictSelect</find>
       <find>mutiLangService = ApplicationContextUtil.getContext().getBean(MutiLangServiceI.class)</find>
       <find>mutiLangService</find>
-      <find>StringUtil.</find>
       <find>&lt;listener&gt;</find>
+      <find>xwork-core.version</find>
+      <find>CriteriaQuery</find>
+      <find>getDetachedCriteria</find>
+      <find>clear(</find>
+      <find>clear</find>
+      <find>org.jeecgframework.core.util.LogUtil</find>
+      <find>StringUtil.</find>
+      <find>jdbc</find>
+      <find>dataSource</find>
+      <find>jeecgCreatePageSql</find>
+      <find>jeecg</find>
+      <find>jdbcdao</find>
+      <find>JdbcDao</find>
+      <find>SimpleJdbcTemplate</find>
     </findStrings>
     <replaceStrings>
+      <replace>logger</replace>
       <replace>StringUtils.</replace>
+      <replace>crmCreatePageSql</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -195,57 +184,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/def/MiniDaoConstants.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/map/MiniDaoLinkedMap.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/rowMapper/MiniColumnMapRowMapper.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/aop/MiniDaoHandler.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/XpsPlanDao.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/factory/MiniDaoClassPathMapperScanner.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/factory/MiniDaoBeanFactory.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/factory/MiniDaoBeanScannerConfigurer.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/test/sql/XpsSalePlanDao_findSalePlanHeadList.sql" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/test/sql/TestDao_findTest2List.sql" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/test/dao/TestDao.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/Start.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/CommonService.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/test/java/test/CTest.java" />
-        <option value="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/cxl.log" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/java/Start.java" />
-        <option value="$PROJECT_DIR$/eisp-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/resources/application-context.xml" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/com/crm/crm/base/mdm/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/application-context.xml" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/dataSource.xml" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/DBTable.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/annotation/CrmEntityTitle.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/PageList.java" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/hibernate/hibernate-core/4.1.0.Final/hibernate-core-4.1.0.Final.jar!/org/hibernate/criterion/Criterion.class" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/SortInfo.java" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/freemarker/freemarker/2.3.22/freemarker-2.3.22.jar!/freemarker/template/utility/StringUtil.class" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/CriterionList.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/TSIcon.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/HqlQuery.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/DetachedCriteriaUtil.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/AliasToBean.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/IGenericBaseCommonDao.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/exception/BusinessException.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/PagerUtil.java" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/hibernate/hibernate-core/4.1.0.Final/hibernate-core-4.1.0.Final.jar!/org/hibernate/criterion/CriteriaQuery.class" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/SortDirection.java" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/org/apache/commons/lang3/StringUtils.class" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/CriteriaQuery.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ToEntityUtil.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/MyBeanUtils.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/ICommonDao.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/DynamicDataSourceEntity.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ResourceUtil.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/DataGrid.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/oConvertUtils.java" />
+        <option value="$PROJECT_DIR$/eisp-core/pom.xml" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/AjaxJson.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/CommonDao.java" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/com/alibaba/druid/1.0.16/druid-1.0.16.jar!/com/alibaba/druid/pool/DruidDataSource.class" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DynamicDataSource.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceType.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceContextHolder.java" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/datasource/lookup/AbstractRoutingDataSource.class" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/datasource/AbstractDataSource.class" />
         <option value="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/datasource.xml" />
         <option value="$PROJECT_DIR$/eisp-core/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/tag/MutiLangTag.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ApplicationContextUtil.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/service/MutiLangServiceI.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/tag/easyui/MutiLangTag.java" />
-        <option value="$PROJECT_DIR$/../crm-maven/repository/org/freemarker/freemarker/2.3.22/freemarker-2.3.22.jar!/freemarker/template/utility/StringUtil.class" />
-        <option value="$PROJECT_DIR$/eisp-core/pom.xml" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ContextHolderUtils.java" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/org/crmframework/base/common/util/BrowserUtils.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/BrowserType.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/BrowserUtils.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/Test.java" />
-        <option value="$PROJECT_DIR$/../crm-maven/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar!/org/apache/commons/collections/CollectionUtils.class" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ReflectHelper.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/MutiLangUtil.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/tag/easyui/DictSelectTag.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/impl/GenericBaseCommonDao.java" />
+        <option value="$PROJECT_DIR$/eisp-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/Pager.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/DBTypeUtil.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/GenericBaseCommonDao.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/IGenericBaseCommonDao.java" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-test/3.1.1.RELEASE/spring-test-3.1.1.RELEASE.jar!/org/springframework/test/context/support/DependencyInjectionTestExecutionListener.class" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcOperations.class" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/SimpleJdbcTemplate.java" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/JdbcDao.java" />
         <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/impl/CommonServiceImpl.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/test/java/test/CTest2.java" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/webpage/login/login.jsp" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/WEB-INF/tld/easyui.tld" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/pom.xml" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/org/crmframework/base/listener/InitListener.java" />
-        <option value="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/service/impl/MutiLangServiceImpl.java" />
-        <option value="$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/com/alibaba/druid/1.0.16/druid-1.0.16.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.class" />
+        <option value="$PROJECT_DIR$/../crm-maven/repository/com/alibaba/druid/1.0.16/druid-1.0.16.jar!/com/alibaba/druid/pool/WrapperAdapter.class" />
+        <option value="$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml" />
       </list>
     </option>
   </component>
@@ -382,12 +371,13 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="43" />
     <option name="y" value="158" />
     <option name="width" value="1218" />
     <option name="height" value="576" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -403,8 +393,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -414,267 +403,7 @@
             </path>
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="tld" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="webpage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-base" type="462c0819:PsiDirectoryNode" />
-              <item name="eisp-base-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="webpage" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
               <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eisp-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
@@ -685,7 +414,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -696,22 +426,22 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../remotGitSpace" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../crm-stable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.crmframework.base.listener" />
+      <recent name="org.crmframework.core.entity" />
       <recent name="org.crmframework.core.util" />
-      <recent name="" />
-      <recent name="org.crmframework.core.tag.easyui" />
-      <recent name="org.crmframework.core.service.impl" />
+      <recent name="org.crmframework.core.common.qbc" />
+      <recent name="org.crmframework.core.vo.datatable" />
+      <recent name="org.crmframework.core.common.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-base\eisp-base-service\src\main\resources" />
-      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\main\resources" />
-      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-base\eisp-base-web\src\main\webapp" />
-      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\test\java\test" />
-      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\main\java\org\crmframework\core\minidao\test\sql" />
+      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\main\java\org\crmframework\core\datasource" />
+      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\main\java\org\crmframework\core\common\dao" />
+      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\main\java\org\crmframework\core\entity" />
+      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\main\java\org\crmframework\core\util" />
+      <recent name="E:\cxl\dev\idea-cxl-space\crm\eisp-core\src\main\java\org\crmframework\core\vo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -726,7 +456,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CTest2.Test1">
+  <component name="RunManager" selected="JUnit.CTest.Test1">
+    <configuration name="CTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="eisp-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="CTest2.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -789,20 +544,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="eisp-core" />
-      <envs />
-    </configuration>
-    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Start" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="eisp-base-service" />
       <envs />
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1047,19 +788,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat8090" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat9002" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Start" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Start (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CTest2.Test1" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CTest.Test1" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Start (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CTest2.Test1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CTest.Test1" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.CTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CTest2.Test1" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CTest.Test1" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Start (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Start" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CTest.Test1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CTest2.Test1" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Start (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1077,53 +818,62 @@
       <workItem from="1526037702036" duration="3041000" />
       <workItem from="1526282343666" duration="13595000" />
       <workItem from="1526304870654" duration="31448000" />
-      <workItem from="1526388106298" duration="14976000" />
+      <workItem from="1526388106298" duration="15292000" />
+      <workItem from="1526439172989" duration="16505000" />
+      <workItem from="1526473977617" duration="9410000" />
     </task>
+    <task id="LOCAL-00001" summary="测试">
+      <created>1526406689483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526406689483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CTest2_Test1 - 2018.05.16 at 00h 23m 06s.xml">
-      <configuration name="CTest2.Test1" configurationId="JUnit" />
+    <history-entry file="CTest - 2018.05.16 at 23h 30m 17s.xml">
+      <configuration name="CTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest2_Test1 - 2018.05.16 at 00h 23m 51s.xml">
-      <configuration name="CTest2.Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 17h 01m 51s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 21m 02s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 17h 42m 24s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 32m 37s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 17h 48m 18s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 35m 21s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 17h 54m 20s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 37m 58s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 17h 57m 46s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 39m 18s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 18h 00m 08s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 44m 47s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 18h 02m 19s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 45m 32s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CTest_Test1 - 2018.05.15 at 18h 06m 11s.xml">
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 46m 53s.xml">
+      <configuration name="CTest.Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CTest_Test1 - 2018.05.16 at 23h 47m 26s.xml">
       <configuration name="CTest.Test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73481000" />
+    <option name="totallyTimeSpent" value="99712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28960818" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2883959" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30181542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1131,18 +881,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4787053" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4795222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3560477" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35494882" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41226575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44709897" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2730711" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2730711" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1198,6 +948,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="214" height="284" key="Git.Branch.Popup" />
+    <state width="214" height="284" key="Git.Branch.Popup/1366.768" />
+    <state width="214" height="284" key="Git.Branch.Popup@1366.768" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
@@ -1208,90 +969,63 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/plug-in/accordion/images/cut.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/plug-in/accordion/images/feiyongzhixing.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/plug-in/area/area.js">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/DetachedCriteriaUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1667">
-          <caret line="3774" column="1" lean-forward="true" selection-start-line="3774" selection-start-column="1" selection-end-line="3774" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="177" column="57" lean-forward="false" selection-start-line="177" selection-start-column="46" selection-end-line="177" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/plug-in/datatables/thems/default/demo.txt">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/IGenericBaseCommonDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/test/java/test/CTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="360">
+          <caret line="294" column="14" lean-forward="true" selection-start-line="294" selection-start-column="14" selection-end-line="294" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/resources/spring-mvc.xml">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/AliasToBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/resources/spring.xml">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/PagerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/application-context.xml" />
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml">
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/hibernate/hibernate-core/4.1.0.Final/hibernate-core-4.1.0.Final.jar!/org/hibernate/criterion/CriteriaQuery.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="146">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/datasource.xml">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/SortDirection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/logback.xml">
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/org/apache/commons/lang3/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="205">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="136" column="21" lean-forward="true" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/tag/MutiLangTag.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/exception/BusinessException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1299,342 +1033,379 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/application-context.xml">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/CriteriaQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/freemarker/freemarker/2.3.22/freemarker-2.3.22.jar!/freemarker/template/utility/StringUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#52849#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/ICommonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/IGenericBaseCommonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="669" column="5" lean-forward="false" selection-start-line="669" selection-start-column="5" selection-end-line="669" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/service/MutiLangServiceI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/MutiLangEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding>
-            <element signature="e#1150#1166#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/jdk1.7.0_45/src.zip!/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="78" column="11" lean-forward="false" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
-          <folding>
-            <element signature="e#2364#2365#0" expanded="false" />
-            <element signature="e#2401#2402#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/org/crmframework/base/common/util/BrowserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/org/crmframework/base/springmvc/util/ContextHolderUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/jdk1.7.0_45/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="3177" column="49" lean-forward="true" selection-start-line="3177" selection-start-column="49" selection-end-line="3177" selection-end-column="49" />
-          <folding>
-            <element signature="e#126443#126444#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/jdk1.7.0_45/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="125" column="22" lean-forward="true" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1526368256458" expanded="true" signature="1189:1223" ph="select id as... t_s_base_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar!/org/apache/commons/collections/CollectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="582" column="26" lean-forward="false" selection-start-line="582" selection-start-column="26" selection-end-line="582" selection-end-column="26" />
-          <folding>
-            <element signature="e#18127#18128#0" expanded="true" />
-            <element signature="e#18180#18181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/com/crm/crm/base/mdm/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ToEntityUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/service/impl/SystemServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/MyBeanUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/BrowserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ReflectHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/impl/CommonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/MutiLangUtil.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/DynamicDataSourceEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="27" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ResourceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1064#1079#0" expanded="false" />
+            <element signature="e#1197#1230#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/service/SystemService.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/DataGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="87" column="65" lean-forward="false" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/oConvertUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/AjaxJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="57" column="1" lean-forward="false" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#575#576#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/ICommonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/CommonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/impl/GenericBaseCommonDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ApplicationContextUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/impl/CommonServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        <state relative-caret-position="133">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1526401305347" expanded="true" signature="1825:1859" ph="select id as... t_s_base_user" />
-            <marker date="1526401305347" expanded="true" signature="1921:1955" ph="select id as... t_s_base_user" />
-            <marker date="1526401305347" expanded="true" signature="2025:2059" ph="select id as... t_s_base_user" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/test/java/test/CTest2.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceContextHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/tag/easyui/DictSelectTag.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="119" column="53" lean-forward="false" selection-start-line="119" selection-start-column="53" selection-end-line="119" selection-end-column="53" />
+        <state relative-caret-position="-80">
+          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/datasource/AbstractDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/datasource/lookup/AbstractRoutingDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DynamicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/webpage/login/login.jsp">
+    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/datasource.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="120" column="99" lean-forward="false" selection-start-line="120" selection-start-column="99" selection-end-line="120" selection-end-column="99" />
+        <state relative-caret-position="180">
+          <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/WEB-INF/tld/easyui.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" column="63" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ContextHolderUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/BrowserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/tag/easyui/MutiLangTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eisp-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="271" column="10" lean-forward="false" selection-start-line="271" selection-start-column="10" selection-end-line="271" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/Pager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/DBTypeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/IGenericBaseCommonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/factory/MiniDaoBeanScannerConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
-          <caret line="244" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/GenericBaseCommonDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="93">
+          <caret line="811" column="30" lean-forward="false" selection-start-line="811" selection-start-column="30" selection-end-line="811" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3050#3059#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-test/3.1.1.RELEASE/spring-test-3.1.1.RELEASE.jar!/org/springframework/test/context/support/DependencyInjectionTestExecutionListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="41" column="89" lean-forward="false" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/java/org/crmframework/base/listener/InitListener.java">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/test/dao/TestDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/service/impl/MutiLangServiceImpl.java">
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="120">
+          <caret line="30" column="66" lean-forward="false" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eisp-base/eisp-base-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/aop/MiniDaoHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="117" column="19" lean-forward="true" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
+        <state relative-caret-position="114">
+          <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eisp-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="322" column="10" lean-forward="true" selection-start-line="322" selection-start-column="10" selection-end-line="322" selection-end-column="10" />
+        <state relative-caret-position="159">
+          <caret line="166" column="32" lean-forward="true" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/SimpleJdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="33" column="53" lean-forward="true" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/impl/CommonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="65" column="39" lean-forward="true" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+          <folding>
+            <marker date="1526485594085" expanded="true" signature="2130:2164" ph="select id as... t_s_base_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/test/java/test/CTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/com/alibaba/druid/1.0.16/druid-1.0.16.jar!/com/alibaba/druid/pool/DruidDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="82" column="48" lean-forward="false" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/com/alibaba/druid/1.0.16/druid-1.0.16.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/JdbcDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1550#1551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/jdk1.7.0_45/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="73" column="58" lean-forward="true" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../crm-maven/repository/com/alibaba/druid/1.0.16/druid-1.0.16.jar!/com/alibaba/druid/pool/WrapperAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/jdk1.7.0_45/src.zip!/java/sql/Wrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding />
         </state>
       </provider>

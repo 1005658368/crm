@@ -41,6 +41,16 @@
         <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
     </bean>
 
+    <!-- 数据源集合 -->
+    <bean id="dynamicDataSource" class="org.crmframework.core.datasource.DynamicDataSource">
+        <property name="targetDataSources">
+            <map key-type="org.crmframework.core.datasource.DataSourceType">
+                <entry key="dataSource_eisp" value-ref="dataSource" />
+            </map>
+        </property>
+        <property name="defaultTargetDataSource" ref="dataSource" />
+    </bean>
+
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="entityInterceptor" ref="hiberAspect" />

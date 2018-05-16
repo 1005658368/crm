@@ -41,6 +41,7 @@
         <logstash.logback.version>4.7</logstash.logback.version>
         <!--  ognl  -->
         <ognl.version>3.0.4</ognl.version>
+        <xwork-core.version>2.1.6</xwork-core.version>
         <!--email-->
         <commons-email.version>1.2</commons-email.version>
         <!--spring -->
@@ -157,6 +158,15 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+            <!--跳过junit编译-->
+<!--
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+-->
         </plugins>
         <resources>
             <resource>

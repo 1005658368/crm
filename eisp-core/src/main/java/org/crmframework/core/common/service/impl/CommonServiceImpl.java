@@ -2,6 +2,8 @@ package org.crmframework.core.common.service.impl;
 
 import org.crmframework.core.common.dao.ICommonDao;
 import org.crmframework.core.common.service.CommonService;
+import org.crmframework.core.entity.BaseEntity;
+import org.crmframework.core.minidao.pojo.MiniDaoPage;
 import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
 import org.crmframework.core.minidao.test.dao.TestDao;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -57,15 +59,15 @@ public class CommonServiceImpl implements CommonService{
         Map<String, Object> paramMap=new HashMap<>();
         //return jdbcTemplate.queryForList("select id as id from t_s_base_user");
 //        return namedParameterJdbcTemplate.queryForList("select id as id from t_s_base_user",paramMap);
-        List list=commonDao.getSession().createSQLQuery("select id as id from t_s_base_user").list();
-        return list;
+//        List list=commonDao.getSession().createSQLQuery("select id as id from t_s_base_user").list();
+//        return list;
 //        List list=miniDaoFastQueryService.queryReturnMinidaoList("select id as id from t_s_base_user",paramMap,BaseEntity.class);
 
-//        BaseEntity vo=new BaseEntity();
-//        vo.setId("356F9B326FA43C97E0534BC9020A2587");
-//        MiniDaoPage<BaseEntity> miniDaoPage= testDao.findTest1List(1,10);
-//        MiniDaoPage<BaseEntity> miniDaoPage2= testDao.findTest2List(vo,1,10);
-//        return miniDaoPage.getResults();
+        BaseEntity vo=new BaseEntity();
+        vo.setId("356F9B326FA43C97E0534BC9020A2587");
+        MiniDaoPage<BaseEntity> miniDaoPage= testDao.findTest1List(1,10);
+        MiniDaoPage<BaseEntity> miniDaoPage2= testDao.findTest2List(vo,1,10);
+        return miniDaoPage2.getResults();
     }
 
     @Override
