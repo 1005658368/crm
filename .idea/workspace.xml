@@ -7,84 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f21b2a5-4404-49ab-9646-4e976e411bbe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_1_37.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opensymphony_xwork_core_2_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_2_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/annotation/CrmEntityTitle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/JdbcDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/dao/jdbc/SimpleJdbcTemplate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/exception/BusinessException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/AliasToBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/CriteriaQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/CriterionList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/DetachedCriteriaUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/HqlQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/PageList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/Pager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/qbc/PagerUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/ICommonDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/IGenericBaseCommonDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/CommonDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common2/dao/impl/GenericBaseCommonDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceContextHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DataSourceType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/datasource/DynamicDataSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/DynamicDataSourceEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/entity/TSIcon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/DBTypeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/MyBeanUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ResourceUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/ToEntityUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/util/oConvertUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/AjaxJson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/DBTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/DataGrid.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/ColumnInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/DataTableReturn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/DataTables.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/FilterInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/SortDirection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/vo/datatable/SortInfo.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/eisp-base-service-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-core/target/eisp-core-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eisp-core/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/eisp-base-api-1.0.0.jar" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/eisp-base-api-1.0.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-base-service-1.0.0.jar" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-base-service-1.0.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-core-1.0.0.jar" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-web/target/eisp-base-web-1.0.0/WEB-INF/lib/eisp-core-1.0.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/common/service/impl/CommonServiceImpl.class" afterPath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/common/service/impl/CommonServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.class" afterPath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/tag/easyui/DictSelectTag.class" afterPath="$PROJECT_DIR$/eisp-core/target/classes/org/crmframework/core/tag/easyui/DictSelectTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/eisp_base_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/eisp_base_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-api/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/eisp-base-service.iml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-service/eisp-base-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/datasource.xml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-service/src/main/resources/datasource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/classes/datasource.xml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-service/target/classes/datasource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-base/eisp-base-web/eisp-base-web.iml" afterPath="$PROJECT_DIR$/eisp-base/eisp-base-web/eisp-base-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/CTest.log" afterPath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/CTest.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/eisp.log" afterPath="$PROJECT_DIR$/eisp-core/catalina.base_IS_UNDEFINED/logs/eisp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/eisp-core.iml" afterPath="$PROJECT_DIR$/eisp-core/eisp-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/pom.xml" afterPath="$PROJECT_DIR$/eisp-core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/impl/CommonServiceImpl.java" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/common/service/impl/CommonServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/IGenericBaseCommonDao.java" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/IGenericBaseCommonDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.java" afterPath="$PROJECT_DIR$/eisp-core/src/main/java/org/crmframework/core/minidao/hibernate/dao/impl/GenericBaseCommonDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml" afterPath="$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/classes/dataSource.xml" afterPath="$PROJECT_DIR$/eisp-core/target/classes/dataSource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/eisp-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/surefire-reports/TEST-test.CTest.xml" afterPath="$PROJECT_DIR$/eisp-core/target/surefire-reports/TEST-test.CTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-core/target/surefire-reports/test.CTest.txt" afterPath="$PROJECT_DIR$/eisp-core/target/surefire-reports/test.CTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eisp-parent/pom.xml" afterPath="$PROJECT_DIR$/eisp-parent/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/eisp-parent/target/" />
     <ignored path="$PROJECT_DIR$/eisp-base/target/" />
@@ -116,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="143">
-              <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+              <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -175,6 +98,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="master-dev" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -820,7 +751,7 @@
       <workItem from="1526304870654" duration="31448000" />
       <workItem from="1526388106298" duration="15292000" />
       <workItem from="1526439172989" duration="16505000" />
-      <workItem from="1526473977617" duration="9410000" />
+      <workItem from="1526473977617" duration="9805000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1526406689483</created>
@@ -829,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526406689483</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="common2中探测性的完善了IGenerCommonDao">
+      <created>1526486172530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526486172530</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -865,7 +803,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99712000" />
+    <option name="totallyTimeSpent" value="100107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -952,7 +890,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="common2中探测性的完善了IGenerCommonDao" />
+    <option name="LAST_COMMIT_MESSAGE" value="common2中探测性的完善了IGenerCommonDao" />
   </component>
   <component name="WindowStateProjectService">
     <state width="214" height="284" key="Git.Branch.Popup" />
@@ -1134,7 +1073,7 @@
         <state relative-caret-position="133">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1258,8 +1197,8 @@
         <state relative-caret-position="93">
           <caret line="811" column="30" lean-forward="false" selection-start-line="811" selection-start-column="30" selection-end-line="811" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3050#3059#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3050#3059#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1277,7 +1216,7 @@
         <state relative-caret-position="120">
           <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1405,7 +1344,7 @@
     <entry file="file://$PROJECT_DIR$/eisp-core/src/main/resources/dataSource.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
-          <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding />
         </state>
       </provider>
