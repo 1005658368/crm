@@ -6,11 +6,12 @@ import org.crmframework.core.entity.MutiLangEntity;
 import org.crmframework.core.service.MutiLangServiceI;
 import org.crmframework.core.util.BrowserUtils;
 import org.crmframework.core.util.ContextHolderUtils;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
-@Service("mutiLangService")
+@Component
 @Transactional
 public class MutiLangServiceImpl extends CommonServiceImpl implements MutiLangServiceI {
 

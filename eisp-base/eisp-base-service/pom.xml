@@ -11,10 +11,15 @@
 
     <groupId>com.cxl</groupId>
     <artifactId>eisp-base-service</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <version>1.0.0</version>
 
     <dependencies>
+        <dependency>
+            <groupId>com.cxl</groupId>
+            <artifactId>eisp-base-api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.cxl</groupId>
             <artifactId>eisp-core</artifactId>

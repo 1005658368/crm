@@ -50,8 +50,8 @@
     <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">  
       <dataSource  class="com.mchange.v2.c3p0.ComboPooledDataSource">  
 	      <driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
-	      <!--<url>jdbc:oracle:thin:@10.2.201.74:1521:eispdev</url>-->
-		  <url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</url>
+	      <url>jdbc:oracle:thin:@10.2.201.74:1521:eispdev</url>
+		  <!--<url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</url>-->
 	      <user>SANQUANSYNC</user>
 	      <password>oracle</password>
       </dataSource>  

@@ -13,11 +13,13 @@ crm基础框架，一直完善下去 啊 哈哈
 3 部署须知
 3.1 服务化(dubbo)部署
 3.1.1 web项目pom文件中删除对service项目的依赖
-3.1.2 spring-mvc.xml中引入<import resource="soa-consumer.xml"/>
-3.1.3 service项目单独以web项目部署
+3.1.2 spring-mvc.xml中放开<dubbo:annotation package="com.crm.crm" />
+3.1.3 spring-web.xml中放开<import resource="soa-consumer.xml"/>
+3.1.4 service项目单独以web项目部署
 3.2 单项目部署
 3.2.1 web项目pom文件中添加对service项目的依赖
-3.2.1 spring-mvc.xml中删除<import resource="soa-consumer.xml"/>
+3.1.2 spring-mvc.xml中注释掉<dubbo:annotation package="com.crm.crm" />
+3.1.3 spring-web.xml中注释掉<import resource="soa-consumer.xml"/>
 3.1.3 service项目不需要单独部署
 
 

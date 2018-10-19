@@ -27,7 +27,7 @@ public class Start {
         System.out.println("cxl结束----------------");
 */
 
-        ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"classpath:application-context.xml"}, true);
+        ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"classpath:spring.xml"}, true);
         System.out.println("cxl启动----------------");
         CommonService commonService=context.getBean("commonService", CommonServiceImpl.class);
         List list=commonService.test();

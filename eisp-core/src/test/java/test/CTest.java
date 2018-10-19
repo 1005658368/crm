@@ -12,17 +12,17 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={ "classpath:application-context.xml" })
+@ContextConfiguration(locations={ "classpath:dataSource.xml" })
 public class CTest {
     private static final Logger log = LoggerFactory.getLogger(CTest.class);
 
     @Resource
-    CommonService commonService;
+    CommonService commonServiceImpl;
 
     @Test
     public void Test1(){
         log.debug("cx1");
-        List list=commonService.test();
+        List list=commonServiceImpl.test();
         System.out.println(list.size());
         log.debug("cx2");
     }

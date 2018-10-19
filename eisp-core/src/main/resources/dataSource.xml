@@ -10,6 +10,10 @@
                            http://www.springframework.org/schema/tx
                            http://www.springframework.org/schema/tx/spring-tx.xsd">
 
+    <context:component-scan base-package="org.crmframework,com.crm.crm" use-default-filters="true">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+
     <!-- 引入datasource配置 -->
     <!-- 数据源配置 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
@@ -124,5 +128,6 @@
 
     <!-- 开启注解事务 -->
     <tx:annotation-driven transaction-manager="transactionManager"  proxy-target-class="true" />
+
 
 </beans>

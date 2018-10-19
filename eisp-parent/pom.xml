@@ -266,6 +266,7 @@
                 <dubbo.port.report>20807</dubbo.port.report>
                 <dubbo.port.saleplan>20808</dubbo.port.saleplan>
                 <dubbo.port.sfa>20809</dubbo.port.sfa>
+                <dubbo.port.base>20810</dubbo.port.base>
                 <!--zookeeper -->
                 <redis.config.localpath>connection/redis.properties</redis.config.localpath>
                 <redis.config.is_by_zookeeper_start>false</redis.config.is_by_zookeeper_start>
@@ -298,8 +299,8 @@
                 <jdbc.driver>oracle.jdbc.driver.OracleDriver</jdbc.driver>
                 <!--<jdbc.url>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST =10.2.201.78)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = eisp)))</jdbc.url>-->
                 <!--<jdbc.username>sqprd</jdbc.username>-->
-                <!--<jdbc.url>jdbc:oracle:thin:@10.2.201.74:1521:eispdev</jdbc.url>-->
-                <jdbc.url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</jdbc.url>
+                <jdbc.url>jdbc:oracle:thin:@10.2.201.74:1521:eispdev</jdbc.url>
+                <!--<jdbc.url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</jdbc.url>-->
                 <jdbc.username>SANQUANSYNC</jdbc.username>
                 <jdbc.password>oracle</jdbc.password>
                 <jdbc.initialSize>2</jdbc.initialSize>

@@ -8,15 +8,16 @@ import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
 import org.crmframework.core.minidao.test.dao.TestDao;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 
-@Service("commonService")
+@Component
 @Transactional
 public class CommonServiceImpl implements CommonService{
     @Resource
@@ -57,17 +58,17 @@ public class CommonServiceImpl implements CommonService{
     @Override
     public List test() {
         Map<String, Object> paramMap=new HashMap<>();
-        //return jdbcTemplate.queryForList("select id as id from t_s_base_user");
+//        return jdbcTemplate.queryForList("select id as id from t_s_base_user");
 //        return namedParameterJdbcTemplate.queryForList("select id as id from t_s_base_user",paramMap);
-//        List list=commonDao.getSession().createSQLQuery("select id as id from t_s_base_user").list();
-//        return list;
+        List list=commonDao.getSession().createSQLQuery("select id as id from t_s_base_user").list();
+        return list;
 //        List list=miniDaoFastQueryService.queryReturnMinidaoList("select id as id from t_s_base_user",paramMap,BaseEntity.class);
 
-        BaseEntity vo=new BaseEntity();
-        vo.setId("356F9B326FA43C97E0534BC9020A2587");
-        MiniDaoPage<BaseEntity> miniDaoPage= testDao.findTest1List(1,10);
-        MiniDaoPage<BaseEntity> miniDaoPage2= testDao.findTest2List(vo,1,10);
-        return miniDaoPage2.getResults();
+//        BaseEntity vo=new BaseEntity();
+//        vo.setId("356F9B326FA43C97E0534BC9020A2587");
+//        MiniDaoPage<BaseEntity> miniDaoPage= testDao.findTest1List(1,10);
+//        MiniDaoPage<BaseEntity> miniDaoPage2= testDao.findTest2List(vo,1,10);
+//        return miniDaoPage2.getResults();
     }
 
     @Override

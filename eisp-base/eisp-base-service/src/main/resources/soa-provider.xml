@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="provider-soa-base"/>
+    <!-- 使用multicast广播注册中心暴露服务地址 -->
+    <dubbo:registry check="${dubbo.check}" address="${zookeeper.url}" file=".dubbo/common-provider-${dubbo.port.base}.cache"/>
+    <dubbo:provider timeout="${dubbo.timeout}" group="${dubbo.group}"></dubbo:provider>
+    <!--关闭所有服务的启动时检查：(没有提供者时不报错)-->
+    <dubbo:consumer check="${dubbo.check}" timeout="${dubbo.timeout}" group="${dubbo.group}" />
+    <!-- 用dubbo协议在20881端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="${dubbo.port.base}" threadpool="fixed" threads="50" serialization="java" payload="508388608"/>
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:annotation package="com.crm.crm"/>
+
+</beans>
+
