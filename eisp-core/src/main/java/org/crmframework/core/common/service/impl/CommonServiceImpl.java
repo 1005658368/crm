@@ -1,9 +1,8 @@
 package org.crmframework.core.common.service.impl;
 
+import com.crm.crm.pojo.entity.MutiLangEntity;
 import org.crmframework.core.common.dao.ICommonDao;
 import org.crmframework.core.common.service.CommonService;
-import org.crmframework.core.entity.BaseEntity;
-import org.crmframework.core.minidao.pojo.MiniDaoPage;
 import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
 import org.crmframework.core.minidao.test.dao.TestDao;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,6 +11,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +19,7 @@ import java.util.Map;
 
 @Component
 @Transactional
-public class CommonServiceImpl implements CommonService{
+public class CommonServiceImpl<T, PK extends Serializable> implements CommonService{
     @Resource
     public ICommonDao commonDao;
     @Resource
@@ -57,10 +57,14 @@ public class CommonServiceImpl implements CommonService{
 
     @Override
     public List test() {
+//        List tlist=commonDao.getSession().createQuery("from TSFunction").list();
+//        System.out.println(tlist.size());
         Map<String, Object> paramMap=new HashMap<>();
 //        return jdbcTemplate.queryForList("select id as id from t_s_base_user");
 //        return namedParameterJdbcTemplate.queryForList("select id as id from t_s_base_user",paramMap);
-        List list=commonDao.getSession().createSQLQuery("select id as id from t_s_base_user").list();
+//        List list=commonDao.getSession().createSQLQuery("select id as id from t_s_base_user").list();
+        List list = this.commonDao.loadAll(MutiLangEntity.class);
+
         return list;
 //        List list=miniDaoFastQueryService.queryReturnMinidaoList("select id as id from t_s_base_user",paramMap,BaseEntity.class);
 
@@ -72,13 +76,50 @@ public class CommonServiceImpl implements CommonService{
     }
 
     @Override
-    public <T> List<T> findByProperty(Class<T> entityClass, String propertyName, Object value) {
-        return commonDao.findByProperty(entityClass, propertyName, value);
+    public <T>List<T> findByProperty(Class<T> entityClass, String propertyName, Object value) {
+        return commonDao.findByProperty(entityClass,propertyName,value);
+    }
+
+    @Override
+    public List<T> findHql(String hql) {
+        return commonDao.findHql(hql);
+
+    }
+
+    @Override
+    public List<T> findHql(String hql, Object... param) {
+        return commonDao.findHql(hql,param);
+    }
+
+    @Override
+    public List<T> findHql(String hql, Map<String, Object> paramMap) {
+        return commonDao.findHql(hql,paramMap);
+    }
+
+    @Override
+    public List<T> findSql(String sql) {
+        return commonDao.findSql(sql);
+
+    }
+
+    @Override
+    public List<T> findSql(String sql, Object... param) {
+        return commonDao.findSql(sql,param);
+    }
+
+    @Override
+    public List<T> findSql(String sql, Map<String, Object> paramMap) {
+        return commonDao.findSql(sql,paramMap);
     }
 
     @Override
     public List<Map<String, Object>> findForJdbc(String sql, Object... objs) {
         return commonDao.findForJdbc(sql, objs);
+    }
+
+    @Override
+    public <T> T getEntity(Class entityName, Serializable id) {
+        return commonDao.getEntity(entityName, id);
     }
 
 }

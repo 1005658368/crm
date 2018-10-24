@@ -16,6 +16,14 @@
     <version>1.0.0</version>
 
     <dependencies>
+        <!--内部依赖 begin-->
+        <dependency>
+            <groupId>com.cxl</groupId>
+            <artifactId>eisp-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--内部依赖 end-->
+
         <!--spring begin-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -209,6 +217,12 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.1</version>
+            <classifier>jdk15</classifier>
+        </dependency>
         <!--utils end-->
 
         <!-- freemarker begin-->
@@ -241,6 +255,39 @@
         </dependency>
         <!-- Test libs -->
 
+        <!-- springMVC依赖 begin -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>${org.codehaus.jackso.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${org.codehaus.jackso.version}</version>
+        </dependency>
+        <!-- springMVC依赖 end -->
+
         <!-- web依赖包 -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -260,6 +307,7 @@
             <version>${jstl.version}</version>
         </dependency>
         <!-- WEB end -->
+
         <dependency>
             <groupId>com.opensymphony</groupId>
             <artifactId>xwork-core</artifactId>

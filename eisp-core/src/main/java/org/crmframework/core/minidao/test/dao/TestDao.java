@@ -1,6 +1,6 @@
 package org.crmframework.core.minidao.test.dao;
 
-import org.crmframework.core.entity.BaseEntity;
+import com.crm.crm.pojo.entity.BaseEntity;
 import org.crmframework.core.minidao.annotation.Arguments;
 import org.crmframework.core.minidao.annotation.MiniDao;
 import org.crmframework.core.minidao.annotation.ResultType;

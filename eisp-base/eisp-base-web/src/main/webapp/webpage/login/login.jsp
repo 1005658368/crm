@@ -108,7 +108,7 @@
 						</div>
 						<div class="passwords">
 							<label class="form-label" desc="登录密码">登录密码：</label>
-							<input   type="password" name="password" type="password" id="password" autocomplete="off" class="login-pass" title="" nullmsg=""/>
+							<input type="password" name="passWord" id="passWord" autocomplete="off" class="login-pass" title="" nullmsg=""/>
 						</div>
 						<br>
 						<div >

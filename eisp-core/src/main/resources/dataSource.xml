@@ -71,7 +71,7 @@
         <!-- 注解方式配置 -->
         <property name="packagesToScan">
             <list>
-                <value>org.crmframework.*</value>
+                <value>com.crm.crm.pojo.entity</value>
             </list>
         </property>
     </bean>
@@ -114,7 +114,7 @@
         <!-- 数据库类型,用于自动生成分页SQL -->
         <property name="dbType" value="oracle"></property>
         <!-- dao地址,配置符合spring方式 -->
-        <property name="basePackage" value="org.crmframework,cn.com.biz"></property>
+        <property name="basePackage" value="org.crmframework,com.crm.crm"></property>
         <!-- 使用的注解,默认是Minidao,推荐 Repository-->
         <!-- <property name="annotation" value="org.springframework.stereotype.Repository"></property> -->
     </bean>

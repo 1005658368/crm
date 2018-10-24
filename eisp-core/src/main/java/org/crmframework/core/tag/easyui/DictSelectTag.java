@@ -1,10 +1,10 @@
 package org.crmframework.core.tag.easyui;
 
+import com.crm.crm.pojo.entity.TSType;
+import com.crm.crm.pojo.entity.TSTypegroup;
 import com.google.gson.Gson;
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.crmframework.core.entity.TSType;
-import org.crmframework.core.entity.TSTypegroup;
 import org.crmframework.core.service.SystemService;
 import org.crmframework.core.util.ApplicationContextUtil;
 import org.crmframework.core.util.MutiLangUtil;

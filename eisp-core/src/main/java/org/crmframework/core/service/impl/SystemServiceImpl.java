@@ -8,5 +8,4 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 @Transactional
 public class SystemServiceImpl extends CommonServiceImpl implements SystemService {
-
 }

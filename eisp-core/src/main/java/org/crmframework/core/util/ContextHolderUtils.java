@@ -11,13 +11,6 @@ import javax.servlet.http.HttpSession;
  */
 public class ContextHolderUtils {
 	
-	//用户自己设计的Session，这里导入功能，自己启动的线程在使用这个属性，自己设置的Session
-	private static HttpSession customerSession;
-
-    public static void setCustomerSession(HttpSession customerSession) {
-    	ContextHolderUtils.customerSession = customerSession;
-	}
-    
     /**
      * SpringMvc下获取request
      * 

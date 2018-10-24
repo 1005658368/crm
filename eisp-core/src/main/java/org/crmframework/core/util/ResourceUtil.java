@@ -1,13 +1,9 @@
 package org.crmframework.core.util;
 
+import com.crm.crm.pojo.entity.*;
 import org.apache.commons.lang3.StringUtils;
-import org.crmframework.core.entity.DynamicDataSourceEntity;
-import org.crmframework.core.entity.TSIcon;
-import org.crmframework.core.entity.TSType;
-import org.crmframework.core.entity.TSTypegroup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.*;
@@ -233,5 +229,10 @@ public class ResourceUtil {
 		logger.info(getSysPath());
 	}
 
-
+	public static final TSUser getSessionUser() {
+		if(null!=ClientManager.getClient()){
+			return ClientManager.getClient().getUser();
+		}
+		return null;
+	}
 }

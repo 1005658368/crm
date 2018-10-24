@@ -1,9 +1,9 @@
 package org.crmframework.core.util;
 
+import com.crm.crm.pojo.entity.MutiLangEntity;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.crmframework.core.entity.MutiLangEntity;
 import org.crmframework.core.service.MutiLangServiceI;
 import java.util.List;
 

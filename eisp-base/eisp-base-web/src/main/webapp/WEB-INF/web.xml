@@ -110,7 +110,7 @@
 
   <listener>
     <description>系统初始化监听器</description>
-    <listener-class>org.crmframework.base.listener.InitListener
+    <listener-class>org.crmframework.core.listener.InitListener
     </listener-class>
   </listener>
 

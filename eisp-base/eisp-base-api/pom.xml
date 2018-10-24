@@ -13,5 +13,12 @@
     <artifactId>eisp-base-api</artifactId>
     <version>1.0.0</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.cxl</groupId>
+            <artifactId>eisp-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

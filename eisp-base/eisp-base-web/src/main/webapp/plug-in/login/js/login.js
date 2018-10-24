@@ -3,8 +3,8 @@ $(document).ready(function() {
 	$("#userName").attr("nullmsg",pleaseinutusername);
 	$("#userName").attr("title",username);
 	
-	$("#password").attr("nullmsg",pleaseinutpassword);
-	$("#password").attr("title",password);
+	$("#passWord").attr("nullmsg",pleaseinutpassword);
+	$("#passWord").attr("title",password);
 	
 	$("#randCode").attr("nullmsg",pleaseinputvalidatecode);
 	$("#randCode").attr("title",validatecode);
@@ -121,42 +121,27 @@ function Login(orgId) {
 	formData['langCode'] = $("#langCode option:selected").val();
 	//
 	var userName =formData['userName'];
-	var password =formData['password'];
-	formData['userName']=Encrypt(userName);
-	formData['password']=Encrypt(password);
+	var passWord =formData['passWord'];
+	// formData['userName']=Encrypt(userName);
+	// formData['passWord']=Encrypt(passWord);
 	$.ajax({
 		async : false,
 		cache : false,
 		type : 'POST',
 		url : checkurl,// 请求的action路径
 		data : formData,
-		error : function() {// 请求失败处理函数
+		error : function(data) {// 请求失败处理函数
 		},
 		success : function(data) {
             var d = $.parseJSON(data);
-            var map = d.attributes;
-            if(map!=null){
-            	if(map.isSingleLogin==0){//不需要单边登录
-                	if(d.success){
-                		$("#formLogin").submit();
-                	}
-                }else if(map.isSingleLogin==1){//单边登录
-                	if(d.success==true && map.isLogin==true){//已经有在线的用户
-                		$.dialog.confirm('该用户已经登录需要强制登录吗?', function(r) {
-        	            	if (r) {
-        	                	$("#formLogin").submit();
-        	                }
-                    	});
-                	}else if(d.success==true && map.isLogin==false){//没有在线用户
-                		$("#formLogin").submit();
-                	}
-                }
-            }else{
-            	var msg = d.msg;
-          	    showError(msg, 500);
-          	    jrumble();
-          		setTimeout('hideTop()', 1000);
-            }
+            if(d.success){
+                $("#formLogin").submit();
+			}else{
+                var msg = d.msg;
+                showError(msg, 500);
+                jrumble();
+                setTimeout('hideTop()', 1000);
+			}
 		}
 	});
 }
@@ -186,8 +171,8 @@ function getCookie()
             if("admin" == $.cookie(this.name)) {
                 $("#randCode").focus();
             } else {
-                $("#password").val("");
-                $("#password").focus();
+                $("#passWord").val("");
+                $("#passWord").focus();
             }
 //            update-end--Author:Biz  Date:20140429 for：是否记住用户名优化
         });
