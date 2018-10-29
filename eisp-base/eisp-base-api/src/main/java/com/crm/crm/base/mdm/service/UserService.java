@@ -1,6 +1,6 @@
 package com.crm.crm.base.mdm.service;
 
-import com.crm.crm.pojo.entity.TSUser;
+import com.crm.crm.base.mdm.entity.TSUser;
 
 public interface UserService {
 	String test(String test);

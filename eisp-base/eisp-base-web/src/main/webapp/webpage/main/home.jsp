@@ -308,7 +308,6 @@
 	    } else {  
 	        e.cancelBubble = true; //IE阻止冒泡方法  
 	    }
-	    //alert(123);
     	$.ajax({
             url : "workflowFysysController.do?doLook",
             type : 'post',
@@ -316,7 +315,6 @@
             cache : false,
             success : function(data) {
                 var d = $.parseJSON(data);
-                console.log(d);
                 if (d.success) {
             		loadList($("#myTable").children(".tabs-panels").children(".panel").eq(2),"workflowFysysController.do?loadCirculationTask",2);
             		loadList($("#myTable").children(".tabs-panels").children(".panel").eq(3),"workflowFysysController.do?loadSendCopyTask",3);

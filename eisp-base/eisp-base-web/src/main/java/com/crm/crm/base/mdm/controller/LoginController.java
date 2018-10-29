@@ -5,11 +5,10 @@ import com.crm.crm.base.mdm.service.AuthorizeServiceI;
 import com.crm.crm.base.mdm.service.FunctionService;
 import com.crm.crm.base.mdm.service.UserService;
 import com.crm.crm.busi.test.service.TestService;
-import com.crm.crm.pojo.entity.TSFunction;
-import com.crm.crm.pojo.entity.TSUser;
-import com.crm.crm.pojo.vo.TSFunctionVo;
+import com.crm.crm.base.mdm.entity.TSUser;
+import com.crm.crm.base.mdm.vo.TSFunctionVo;
+import org.apache.commons.collections.CollectionUtils;
 import org.crmframework.core.common.service.CommonService;
-import org.crmframework.core.service.SystemService;
 import org.crmframework.core.util.*;
 import org.crmframework.core.vo.AjaxJson;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.*;
 
 @Scope("prototype")
@@ -51,6 +49,12 @@ public class LoginController {
         return "login/login2";
     }
 
+    /**
+     * 检查用户
+     * @param user
+     * @param request
+     * @return
+     */
     @RequestMapping(params = "checkuser")
     @ResponseBody
     public AjaxJson checkuser(TSUser user, HttpServletRequest request) {
@@ -77,6 +81,13 @@ public class LoginController {
         return ajaxJson;
     }
 
+    /**
+     * 登录进入首页
+     * @param userName
+     * @param password
+     * @param request
+     * @return
+     */
     @RequestMapping(params = "login")
     public ModelAndView login(String userName, String password, HttpServletRequest request) {
         ModelAndView modelAndView = new ModelAndView();
@@ -88,89 +99,43 @@ public class LoginController {
         return modelAndView;
     }
 
+    /**
+     * 左侧菜单业
+     * @param request
+     * @return
+     */
     @RequestMapping(params = "left")
     public ModelAndView left(HttpServletRequest request) {
         TSUser user=ClientManager.getClient().getUser();
+        //获取当前用户所有菜单
+        List<TSFunctionVo> functionList=functionService.findFunctionByUserId(user.getId());
+        //菜单分层并去重
+        Map<String,Map<String,TSFunctionVo>> levelFunctionMap=functionService.setChildren(functionList);
+        //获取一级层菜单并排序
+        List<TSFunctionVo> topFunctionList=new ArrayList<TSFunctionVo>(levelFunctionMap.get("0").values());
+        Collections.sort(topFunctionList,new Comparator<TSFunctionVo>(){
+            @Override
+            public int compare(TSFunctionVo o1, TSFunctionVo o2) {
+                if (Integer.parseInt(o1.getFunctionOrder()) <= Integer.parseInt(o2.getFunctionOrder()))
+                    return -1;
+                else
+                    return 1;
+            }}
+         );
+        request.setAttribute("functionList",topFunctionList);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("main/left");
-        List<TSFunctionVo> functionList=functionService.findFunctionByUserId("8a8249c75451b26b015451b5db770022");
-        //去重
-//        Map<String,TSFunctionVo> functionMap=new HashMap<String,TSFunctionVo>();
-        Map<String,Map<String,TSFunctionVo>> levelFunctionMap=new HashMap<String,Map<String,TSFunctionVo>>();
-        for(TSFunctionVo vo:functionList){
-//            if(!functionMap.containsKey(vo.getId())){
-//                functionMap.put(vo.getId(),vo);
-//            }
-            String level=String.valueOf(vo.getFunctionLevel());
-            String id=vo.getId();
-            if(levelFunctionMap.containsKey(level)){
-                if(!levelFunctionMap.get(level).containsKey(id)){
-                    levelFunctionMap.get(level).put(id,vo);
-                }
-            }else{
-                Map<String,TSFunctionVo> levelMap=new HashMap<String,TSFunctionVo>();
-                levelMap.put(id,vo);
-                levelFunctionMap.put(level,levelMap);
-            }
-        }
-//        functionList=(List<TSFunctionVo>)functionMap.values();
-        //按照层级分组
-        for(int i=levelFunctionMap.keySet().size()-2;i>=0;i--){
-            Collection<TSFunctionVo> tlist0=levelFunctionMap.get(String.valueOf(i)).values();
-            Collection<TSFunctionVo> tlist1=levelFunctionMap.get(String.valueOf(i+1)).values();
-            for(TSFunctionVo vo:tlist0){
-                List<TSFunctionVo> tlist2=new ArrayList<TSFunctionVo>();
-                for(TSFunctionVo vo2:tlist1){
-                    if(vo2.getParentFunctionId().equals(vo.getId())){
-                        if(null==vo.getFunctionVoList()){
-                            List<TSFunctionVo> tlist3=new ArrayList<TSFunctionVo>();
-                            vo.setFunctionVoList(tlist3);
-                        }
-                        vo.getFunctionVoList().add(vo2);
-                        tlist2.add(vo2);
-                    }
-                }
-                tlist1.removeAll(tlist2);
-            }
-        }
-        request.setAttribute("functionList", levelFunctionMap.get("0").values());
-//        request.setAttribute("menuMap", getFunctionMap(user));
         return modelAndView;
     }
 
-    private Map<Integer, List<TSFunction>> getFunctionMap(TSUser user) {
-        Map<Integer, List<TSFunction>> functionMap = new HashMap<Integer, List<TSFunction>>();
-        Map<String, TSFunction> loginActionlist = getUserFunction(user);
-        if (loginActionlist.size() > 0) {
-            Collection<TSFunction> allFunctions = loginActionlist.values();
-            for (TSFunction function : allFunctions) {
-                if (!functionMap.containsKey(function.getFunctionLevel() + 0)) {
-                    functionMap.put(function.getFunctionLevel() + 0, new ArrayList<TSFunction>());
-                }
-                functionMap.get(function.getFunctionLevel() + 0).add(function);
-            }
-            // 菜单栏排序
-            Collection<List<TSFunction>> c = functionMap.values();
-            for (List<TSFunction> list : c) {
-                Collections.sort(list, new NumberComparator());
-            }
-        }
-        return functionMap;
+    /**
+     * 右侧工作流首页
+     * @param request
+     * @return
+     */
+    @RequestMapping(params = "home")
+    public ModelAndView home(HttpServletRequest request) {
+        return new ModelAndView("redirect:workflowController.do?home");
     }
 
-    private Map<String, TSFunction> getUserFunction(TSUser user) {
-        List<TSFunction> functionList = authorizeService.loadFunctionByUserId(user.getId());
-        Map<String , TSFunction> map=assembleFunctionByIdMap(null, functionList);
-        return map;
-    }
-
-    private Map<String , TSFunction> assembleFunctionByIdMap(Map<String, TSFunction> map,List<TSFunction> functions) {
-        if (map == null) {
-            map = new HashMap<String, TSFunction>();
-        }
-        for (TSFunction function: functions) {
-            map.put(function.getId(), function);
-        }
-        return map;
-    }
 }

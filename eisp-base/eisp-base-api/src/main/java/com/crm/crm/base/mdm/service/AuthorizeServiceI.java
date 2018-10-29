@@ -1,7 +1,7 @@
 package com.crm.crm.base.mdm.service;
 
 
-import com.crm.crm.pojo.entity.TSFunction;
+import com.crm.crm.base.mdm.entity.TSFunction;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.crm.crm.base.mdm.dao;
 
-import com.crm.crm.pojo.vo.TSFunctionVo;
+import com.crm.crm.base.mdm.vo.TSFunctionVo;
 import org.crmframework.core.minidao.annotation.Arguments;
 import org.crmframework.core.minidao.annotation.MiniDao;
 import org.crmframework.core.minidao.annotation.ResultType;
@@ -18,7 +18,7 @@ public interface FunctionDao {
                     " ";
     @Sql(findFunctionByUserIdSql)
     @Arguments({ "userId" })
-    @ResultType("com.crm.crm.pojo.vo.TSFunctionVo")
+    @ResultType("com.crm.crm.base.mdm.vo.TSFunctionVo")
     List<TSFunctionVo> findFunctionByUserId(String userId);
 
     /**
@@ -27,6 +27,6 @@ public interface FunctionDao {
      * @return
      */
     @Arguments({ "userId" })
-    @ResultType("com.crm.crm.pojo.vo.TSFunctionVo")
+    @ResultType("com.crm.crm.base.mdm.vo.TSFunctionVo")
     List<TSFunctionVo> findFunctionByUserIdSQL(String userId);
 }

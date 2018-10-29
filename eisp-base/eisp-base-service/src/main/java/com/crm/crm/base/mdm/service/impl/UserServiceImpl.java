@@ -5,7 +5,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.crm.crm.base.mdm.service.UserService;
 import com.crm.crm.busi.test.service.TestService;
-import com.crm.crm.pojo.entity.TSUser;
+import com.crm.crm.base.mdm.entity.TSUser;
 import org.crmframework.core.common.service.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

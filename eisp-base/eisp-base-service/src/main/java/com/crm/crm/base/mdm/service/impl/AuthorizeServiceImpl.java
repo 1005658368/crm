@@ -1,9 +1,12 @@
 package com.crm.crm.base.mdm.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.crm.crm.base.mdm.entity.TSFunction;
+import com.crm.crm.base.mdm.entity.TSRole;
+import com.crm.crm.base.mdm.entity.TSRoleFunction;
+import com.crm.crm.base.mdm.entity.TSRoleUser;
 import com.crm.crm.base.mdm.service.AuthorizeServiceI;
 import com.crm.crm.base.mdm.service.UserService;
-import com.crm.crm.pojo.entity.*;
 import org.crmframework.core.service.SystemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
