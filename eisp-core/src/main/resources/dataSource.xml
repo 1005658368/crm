@@ -71,7 +71,7 @@
         <!-- 注解方式配置 -->
         <property name="packagesToScan">
             <list>
-                <value>com.crm.crm.pojo.entity</value>
+                <value>com.crm.crm.**.entity</value>
             </list>
         </property>
     </bean>

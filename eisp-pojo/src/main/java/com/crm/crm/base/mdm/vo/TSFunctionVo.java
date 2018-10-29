@@ -1,12 +1,12 @@
-package com.crm.crm.pojo.vo;
+package com.crm.crm.base.mdm.vo;
 
-import java.io.Serializable;
 import java.util.List;
 
 public class TSFunctionVo extends BaseEntityVo{
     private String id;
-    private String parentFunctionId;// 父菜单id
     private String functionName;// 菜单名称
+    private String parentFunctionId;// 父菜单id
+    private String parentFunctionName;// 父菜单名称
     private Short functionLevel;// 菜单等级
     private String functionUrl;// 菜单地址
     private Short functionIframe;// 菜单地址打开方式
@@ -103,6 +103,14 @@ public class TSFunctionVo extends BaseEntityVo{
 
     public void setFunctionVoList(List<TSFunctionVo> functionVoList) {
         this.functionVoList = functionVoList;
+    }
+
+    public String getParentFunctionName() {
+        return parentFunctionName;
+    }
+
+    public void setParentFunctionName(String parentFunctionName) {
+        this.parentFunctionName = parentFunctionName;
     }
 }
 

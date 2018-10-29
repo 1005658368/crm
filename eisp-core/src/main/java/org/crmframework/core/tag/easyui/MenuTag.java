@@ -1,6 +1,6 @@
 package org.crmframework.core.tag.easyui;
 
-import com.crm.crm.pojo.entity.TSFunction;
+import com.crm.crm.base.mdm.entity.TSFunction;
 import org.crmframework.core.util.ListtoMenu;
 
 import javax.servlet.jsp.JspTagException;

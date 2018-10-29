@@ -1,4 +1,4 @@
-package com.crm.crm.pojo.entity;
+package com.crm.crm.base.mdm.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

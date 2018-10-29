@@ -1,6 +1,6 @@
 package org.crmframework.core.util;
 
-import com.crm.crm.pojo.entity.TSFunction;
+import com.crm.crm.base.mdm.entity.TSFunction;
 import org.apache.commons.lang.StringUtils;
 import org.crmframework.core.service.MutiLangServiceI;
 import org.springframework.beans.factory.annotation.Autowired;

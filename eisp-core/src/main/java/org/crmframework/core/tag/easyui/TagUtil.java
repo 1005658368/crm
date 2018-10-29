@@ -2,7 +2,7 @@ package org.crmframework.core.tag.easyui;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.crm.crm.pojo.entity.TSRole;
+import com.crm.crm.base.mdm.entity.TSRole;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;

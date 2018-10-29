@@ -1,8 +1,8 @@
 package org.crmframework.core.tag.easyui;
 
-import com.crm.crm.pojo.entity.TSOperation;
-import com.crm.crm.pojo.entity.TSType;
-import com.crm.crm.pojo.entity.TSTypegroup;
+import com.crm.crm.base.mdm.entity.TSOperation;
+import com.crm.crm.base.mdm.entity.TSType;
+import com.crm.crm.base.mdm.entity.TSTypegroup;
 import com.google.gson.Gson;
 import net.sf.json.JSONObject;
 import org.crmframework.core.service.SystemService;

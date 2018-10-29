@@ -1,7 +1,6 @@
 package org.crmframework.core.util;
 
-import com.crm.crm.pojo.entity.*;
-import org.apache.commons.lang3.StringUtils;
+import com.crm.crm.base.mdm.entity.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletRequest;
@@ -38,7 +37,7 @@ public class ResourceUtil {
 	 */
 	public static Map<String, DynamicDataSourceEntity> dynamicDataSourceMap = new HashMap<String, DynamicDataSourceEntity>();
 	
-	private static final ResourceBundle bundle = ResourceBundle.getBundle("sysConfig");
+	private static final ResourceBundle bundle = ResourceBundle.getBundle("connection/sysConfig");
 	
 	/**
 	 * 属性文件[resources/sysConfig.properties]
@@ -68,7 +67,7 @@ public class ResourceUtil {
 //		String requestPath = request.getRequestURI() + "?" + request.getQueryString();
 		String queryString = request.getQueryString();
 		String requestPath = request.getRequestURI();
-		if(StringUtils.isNotEmpty(queryString)){
+		if(StringUtil.isNotEmpty(queryString)){
 			requestPath += "?" + queryString;
 		}
 
@@ -214,7 +213,7 @@ public class ResourceUtil {
 			key = key.substring(2,key.indexOf("}"));
 		}
 		//从session中取得值
-		if (!StringUtils.isEmpty(key)) {
+		if (!StringUtil.isEmpty(key)) {
 			HttpSession session = ContextHolderUtils.getSession();
 			returnValue = (String) session.getAttribute(key);
 		}

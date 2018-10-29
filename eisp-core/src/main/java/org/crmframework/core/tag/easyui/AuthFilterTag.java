@@ -1,6 +1,6 @@
 package org.crmframework.core.tag.easyui;
 
-import com.crm.crm.pojo.entity.TSOperation;
+import com.crm.crm.base.mdm.entity.TSOperation;
 import org.crmframework.core.service.SystemService;
 import org.crmframework.core.util.ApplicationContextUtil;
 import org.crmframework.core.util.Globals;

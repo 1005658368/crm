@@ -1,6 +1,6 @@
 package org.crmframework.core.util;
 
-import com.crm.crm.pojo.entity.TSUser;
+import com.crm.crm.base.mdm.entity.TSUser;
 
 
 /**

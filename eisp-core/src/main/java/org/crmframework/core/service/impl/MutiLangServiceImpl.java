@@ -1,6 +1,6 @@
 package org.crmframework.core.service.impl;
 
-import com.crm.crm.pojo.entity.MutiLangEntity;
+import com.crm.crm.base.mdm.entity.MutiLangEntity;
 import org.apache.commons.lang3.StringUtils;
 import org.crmframework.core.common.service.impl.CommonServiceImpl;
 import org.crmframework.core.service.MutiLangServiceI;

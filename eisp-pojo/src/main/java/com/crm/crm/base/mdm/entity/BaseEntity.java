@@ -1,9 +1,14 @@
-package com.crm.crm.pojo.vo;
+package com.crm.crm.base.mdm.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-public class BaseEntityVo implements Serializable {
+@SuppressWarnings("serial")
+@MappedSuperclass
+public class BaseEntity implements Serializable {
     private String id;
     /**
      * 创建人.id
@@ -22,6 +27,10 @@ public class BaseEntityVo implements Serializable {
      */
     private Date updateTime;
 
+    @Id
+    @GeneratedValue(generator = "paymentableGenerator")
+    @GenericGenerator(name = "paymentableGenerator", strategy = "uuid")
+    @Column(name = "ID", nullable = false, length = 36)
     public String getId() {
         return id;
     }
@@ -30,6 +39,8 @@ public class BaseEntityVo implements Serializable {
         this.id = id;
     }
 
+//    @Column(name = "CREATE_USER_ID")
+    @Transient
     public String getCreateUserid() {
         return createUserid;
     }
@@ -38,6 +49,8 @@ public class BaseEntityVo implements Serializable {
         this.createUserid = createUserid;
     }
 
+//    @Column(name = "create_Time")
+    @Transient
     public Date getCreateTime() {
         return createTime;
     }
@@ -46,6 +59,8 @@ public class BaseEntityVo implements Serializable {
         this.createTime = createTime;
     }
 
+//    @Column(name = "update_User_id")
+    @Transient
     public String getUpdateUserid() {
         return updateUserid;
     }
@@ -54,6 +69,8 @@ public class BaseEntityVo implements Serializable {
         this.updateUserid = updateUserid;
     }
 
+//    @Column(name = "update_Time")
+    @Transient
     public Date getUpdateTime() {
         return updateTime;
     }

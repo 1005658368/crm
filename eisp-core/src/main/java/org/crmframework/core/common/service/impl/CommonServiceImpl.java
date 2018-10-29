@@ -1,6 +1,6 @@
 package org.crmframework.core.common.service.impl;
 
-import com.crm.crm.pojo.entity.MutiLangEntity;
+import com.crm.crm.base.mdm.entity.MutiLangEntity;
 import org.crmframework.core.common.dao.ICommonDao;
 import org.crmframework.core.common.service.CommonService;
 import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
