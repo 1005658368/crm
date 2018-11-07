@@ -1,11 +1,11 @@
 package org.crmframework.core.minidao.test.dao;
 
 import com.crm.crm.base.mdm.entity.BaseEntity;
+import com.crm.crm.common.vo.MiniDaoPage;
 import org.crmframework.core.minidao.annotation.Arguments;
 import org.crmframework.core.minidao.annotation.MiniDao;
 import org.crmframework.core.minidao.annotation.ResultType;
 import org.crmframework.core.minidao.annotation.Sql;
-import org.crmframework.core.minidao.pojo.MiniDaoPage;
 
 @MiniDao
 public interface TestDao {

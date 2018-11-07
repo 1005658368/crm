@@ -13,6 +13,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
 import org.springframework.util.Assert;
 
 import javax.annotation.Resource;
@@ -28,6 +32,10 @@ public abstract class GenericBaseCommonDao<T, PK extends Serializable> implement
     @Autowired
     @Qualifier("jdbcTemplate")
     private JdbcTemplate jdbcTemplate;
+    @Autowired
+    @Qualifier("namedParameterJdbcTemplate")
+    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
 
     @Override
     public Session getSession() {
@@ -130,6 +138,83 @@ public abstract class GenericBaseCommonDao<T, PK extends Serializable> implement
     @Override
     public List<Map<String, Object>> findForJdbc(String sql, Object... objs) {
         return this.jdbcTemplate.queryForList(sql, objs);
+    }
+
+    @Override
+    public List<Map<String, Object>> findForNameJdbc(String sql, Map<String,Object> paramMap) {
+        return this.namedParameterJdbcTemplate.queryForList(sql, paramMap);
+    }
+
+    @Override
+    public <T> Serializable save(T entity) {
+        try {
+            Serializable id = getSession().save(entity);
+            getSession().flush();
+            return id;
+        } catch (RuntimeException e) {
+            throw e;
+        }
+    }
+
+    /**
+     * 根据传入的实体删除对象
+     */
+    @Override
+    public <T> void delete(T entity) {
+        try {
+            getSession().delete(entity);
+            getSession().flush();
+        } catch (RuntimeException e) {
+            throw e;
+        }
+    }
+
+    @Override
+    public <T> void update(T pojo) {
+        getSession().update(pojo);
+        getSession().flush();
+    }
+
+    @Override
+    public <T> void saveOrUpdate(T entity) {
+        try {
+            getSession().saveOrUpdate(entity);
+            getSession().flush();
+        } catch (RuntimeException e) {
+            throw e;
+        }
+    }
+
+    @Override
+    public void jdbcUpdate(String sql, Object... obj){
+        jdbcTemplate.update(sql,obj);
+    }
+
+    @Override
+    public void jdbcBatchUpdate(String sql, List<Object[]> batchArgs){
+        jdbcTemplate.batchUpdate(sql,batchArgs);
+    }
+
+    @Override
+    public void nameJdbcUpdate(String sql, Map<String, Object> paramMap){
+        namedParameterJdbcTemplate.update(sql,paramMap);
+    }
+
+    @Override
+    public void nameJdbcUpdate(String sql, Object obj){
+        SqlParameterSource sqlParameterSource= new BeanPropertySqlParameterSource(obj);
+        namedParameterJdbcTemplate.update(sql,sqlParameterSource);
+    }
+
+    @Override
+    public void nameJdbcBatchUpdate(String sql, Map<String, Object>[] paramMapArray){
+        namedParameterJdbcTemplate.batchUpdate(sql,paramMapArray);
+    }
+
+    @Override
+    public void nameJdbcBatchUpdate(String sql, List<Object> objList){
+        SqlParameterSource[] sqlParameterSourceArray = SqlParameterSourceUtils.createBatch(objList.toArray());
+        namedParameterJdbcTemplate.batchUpdate(sql,sqlParameterSourceArray);
     }
 
 

@@ -24,4 +24,26 @@ public interface CommonService {
     List<Map<String, Object>> findForJdbc(String sql, Object... objs);
 
     <T> T getEntity(Class entityName, Serializable id);
+
+    List<Map<String, Object>> findForNameJdbc(String sql, Map<String, Object> paramMap);
+
+    <T> Serializable save(T entity);
+
+    <T> void delete(T entity);
+
+    <T> void update(T pojo);
+
+    <T> void saveOrUpdate(T entity);
+
+    void jdbcUpdate(String sql, Object... obj);
+
+    void jdbcBatchUpdate(String sql, List<Object[]> batchArgs);
+
+    void nameJdbcUpdate(String sql, Map<String, Object> paramMap);
+
+    void nameJdbcUpdate(String sql, Object obj);
+
+    void nameJdbcBatchUpdate(String sql, Map<String, Object>[] paramMapArray);
+
+    void nameJdbcBatchUpdate(String sql, List<Object> objList);
 }

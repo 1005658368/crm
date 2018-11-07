@@ -1,6 +1,7 @@
 package com.crm.crm.base.mdm.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.alibaba.fastjson.JSONObject;
 import com.crm.crm.base.mdm.service.AuthorizeServiceI;
 import com.crm.crm.base.mdm.service.FunctionService;
 import com.crm.crm.base.mdm.service.UserService;
@@ -9,6 +10,7 @@ import com.crm.crm.base.mdm.entity.TSUser;
 import com.crm.crm.base.mdm.vo.TSFunctionVo;
 import org.apache.commons.collections.CollectionUtils;
 import org.crmframework.core.common.service.CommonService;
+import org.crmframework.core.service.SystemService;
 import org.crmframework.core.util.*;
 import org.crmframework.core.vo.AjaxJson;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +51,16 @@ public class LoginController {
         return "login/login2";
     }
 
+    @RequestMapping(params = "test2")
+    @ResponseBody
+    public Map test2() {
+        String s = "111";
+        s="{\"TYPENAME\":\"三全\"}";
+        JSONObject jsonObject=JSONObject.parseObject(s);
+        Map map=JSONObject.parseObject(s,HashMap.class);
+        return map;
+    }
+
     /**
      * 检查用户
      * @param user
@@ -79,6 +91,22 @@ public class LoginController {
             }
         }
         return ajaxJson;
+    }
+
+    @RequestMapping(params = "test1")
+    @ResponseBody
+    public Map<String,Object> test1(HttpServletRequest request) {
+        StringBuffer sb = new StringBuffer();
+        sb.append(" select ts.typename from xps_material xm ");
+        sb.append(" join T_B_PRODUCT_L_M tb  on tb.SPECI_NUM=xm.prdha ");
+        sb.append(" left join T_B_PRODUCT_L_M t on tb.PARENTLEVELID=t.id ");
+        sb.append(" left join t_s_type ts on t.brand=ts.typecode ");
+        sb.append(" left join t_s_typegroup tp on tp.id=ts.typegroupid ");
+        sb.append(" where decode(xm.LVORM,'X','0','1')=1 and tp.typegroupcode='product_brand' ");
+        sb.append(" and xm.matnr=?  ");
+        List<Map<String, Object>> list=commonServiceImpl.findForJdbc(sb.toString(),"1100528001");
+        Map<String, Object> map=list.get(0);
+        return map;
     }
 
     /**

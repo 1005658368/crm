@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
+import com.crm.crm.common.vo.MiniDaoPage;
 import org.apache.commons.lang3.StringUtils;
-import org.crmframework.core.minidao.pojo.MiniDaoPage;
 import org.crmframework.core.minidao.util.FreemarkerParseFactory;
 import org.crmframework.core.minidao.util.MiniDaoUtil;
 import org.slf4j.Logger;

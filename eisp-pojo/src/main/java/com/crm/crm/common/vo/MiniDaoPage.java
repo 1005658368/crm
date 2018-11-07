@@ -1,8 +1,9 @@
-package org.crmframework.core.minidao.pojo;
+package com.crm.crm.common.vo;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class MiniDaoPage<T> {
+public class MiniDaoPage<T> implements Serializable{
 	// 当前页面
 	private int page;
 	// 每页显示记录数

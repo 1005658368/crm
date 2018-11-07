@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.crm.crm.common.vo.MiniDaoPage;
 import ognl.Ognl;
 import ognl.OgnlException;
 import org.apache.commons.lang3.StringUtils;
@@ -19,7 +20,6 @@ import org.crmframework.core.minidao.annotation.ResultType;
 import org.crmframework.core.minidao.annotation.Sql;
 import org.crmframework.core.minidao.def.MiniDaoConstants;
 import org.crmframework.core.minidao.hibernate.dao.IGenericBaseCommonDao;
-import org.crmframework.core.minidao.pojo.MiniDaoPage;
 import org.crmframework.core.minidao.rowMapper.MiniColumnMapRowMapper;
 import org.crmframework.core.minidao.rowMapper.MiniColumnOriginalMapRowMapper;
 import org.crmframework.core.minidao.util.FreemarkerParseFactory;

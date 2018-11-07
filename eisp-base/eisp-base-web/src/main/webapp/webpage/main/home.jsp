@@ -370,21 +370,28 @@
 	                if (d.success) {		//d.obj
 	                    loadTemple(d.obj,tab,index);
 	                }
-	            }
+	            },
+				error:function(data){
+                    console.log(data);
+				}
 	        });
 	    }	    	    
 	});
+/*
 	loadList($("#myTable").children(".tabs-panels").children(".panel").eq(1),"workflowFysysController.do?loadCommunicateTask",1);
 	loadList($("#myTable").children(".tabs-panels").children(".panel").eq(2),"workflowFysysController.do?loadCirculationTask",2);
 	loadList($("#myTable").children(".tabs-panels").children(".panel").eq(3),"workflowFysysController.do?loadSendCopyTask",3);
 	loadList($("#myTable").children(".tabs-panels").children(".panel").eq(4),"workflowFysysController.do?backTask",4);
+*/
 	/* setInterval(function(){ */
+/*
 		ran=Math.random();
 		loadList($("#myTable").children(".tabs-panels").children(".panel").eq(0),"workflowFysysController.do?loadWorkFlowTask&ran="+ran,0);
 		loadList($("#myTable").children(".tabs-panels").children(".panel").eq(1),"workflowFysysController.do?loadCommunicateTask&ran="+ran,1);
 		loadList($("#myTable").children(".tabs-panels").children(".panel").eq(2),"workflowFysysController.do?loadCirculationTask&ran="+ran,2);		
 		loadList($("#myTable").children(".tabs-panels").children(".panel").eq(3),"workflowFysysController.do?loadSendCopyTask&ran="+ran,3);
 		loadList($("#myTable").children(".tabs-panels").children(".panel").eq(4),"workflowFysysController.do?backTask&ran="+ran,4);
+*/
 	/* },600*1000); */
 	
 	function pageFresh(){

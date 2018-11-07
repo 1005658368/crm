@@ -1,5 +1,6 @@
 package org.crmframework.core.aop;
 
+import com.crm.crm.base.mdm.entity.BaseEntity;
 import org.hibernate.EmptyInterceptor;
 import org.hibernate.type.Type;
 import org.slf4j.Logger;
@@ -18,6 +19,8 @@ public class HiberAspect extends EmptyInterceptor {
 
     @Override
     public boolean onSave(Object entity, Serializable id, Object[] state, String[] propertyNames, Type[] types) {
+        BaseEntity baseEntity=(BaseEntity)entity;
+        System.out.println("hibernate拦截器onSave方法的ID:"+baseEntity.getId());
         return true;
     }
 

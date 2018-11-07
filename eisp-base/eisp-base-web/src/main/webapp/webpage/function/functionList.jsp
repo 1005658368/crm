@@ -13,17 +13,17 @@
             <t:dgCol title="menu.url" field="functionUrl" treefield="src"></t:dgCol>
             <t:dgCol title="menu.order" field="functionOrder" treefield="order"></t:dgCol>
             <t:dgCol title="common.operation" field="opt" width="100"></t:dgCol>
-            <t:dgDelOpt url="functionController.do?del&id={id}" title="common.delete"></t:dgDelOpt>
+            <t:dgDelOpt url="functionController.do?delFunction&id={id}" title="common.delete"></t:dgDelOpt>
             <t:dgFunOpt funname="operationDetail(id)" title="button.setting"></t:dgFunOpt>
-            <t:dgFunOpt funname="operationDetail_msg(id)" title="消息"></t:dgFunOpt>
+            <%--<t:dgFunOpt funname="operationDetail_msg(id)" title="消息"></t:dgFunOpt>--%>
 
             <%--   update-start--Author:anchao  Date:20130415 for：按钮权限控制--%>
             <%--
                 <t:dgFunOpt funname="operationData(id)" title="数据规则"></t:dgFunOpt>
              --%>
             <%--   update-end--Author:anchao  Date:20130415 for：按钮权限控制--%>
-            <t:dgToolBar title="common.add.param" langArg="common.menu" icon="icon-add" url="functionController.do?addorupdate" funname="addFun"></t:dgToolBar>
-            <t:dgToolBar title="common.edit.param" langArg="common.menu" icon="icon-edit" url="functionController.do?addorupdate" funname="update"></t:dgToolBar>
+            <t:dgToolBar id="add" title="common.add.param" langArg="common.menu" icon="icon-add" url="functionController.do?addorupdate" funname="addFun"></t:dgToolBar>
+            <t:dgToolBar id="edit" title="common.edit.param" langArg="common.menu" icon="icon-edit" url="functionController.do?addorupdate" funname="update"></t:dgToolBar>
         </t:datagrid>
     </div>
 </div>
@@ -42,7 +42,7 @@
      style="width: 400px; overflow: hidden;">
     <div class="easyui-panel" style="padding: 1px;" fit="true" border="false" id="operationDetailpanel"></div>
 </div>
-</div>
+<%@include file="/webpage/common/operation.jsp"%>
 
 <script type="text/javascript">
     <%--   update-start--Author:anchao  Date:20130415 for：按钮权限控制--%>

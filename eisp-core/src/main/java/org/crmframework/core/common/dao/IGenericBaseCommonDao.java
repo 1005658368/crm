@@ -30,4 +30,25 @@ public interface IGenericBaseCommonDao {
     List findHql(String query);
 
 
+    List<Map<String, Object>> findForNameJdbc(String sql, Map<String, Object> paramMap);
+
+    <T> Serializable save(T entity);
+
+    <T> void update(T pojo);
+
+    <T> void saveOrUpdate(T entity);
+
+    <T> void delete(T entity);
+
+    void jdbcUpdate(String sql, Object... obj);
+
+    void jdbcBatchUpdate(String sql, List<Object[]> batchArgs);
+
+    void nameJdbcUpdate(String sql, Map<String, Object> paramMap);
+
+    void nameJdbcUpdate(String sql, Object obj);
+
+    void nameJdbcBatchUpdate(String sql, Map<String, Object>[] paramMapArray);
+
+    void nameJdbcBatchUpdate(String sql, List<Object> objList);
 }

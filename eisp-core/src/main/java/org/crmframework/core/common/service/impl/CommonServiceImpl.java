@@ -6,7 +6,10 @@ import org.crmframework.core.common.service.CommonService;
 import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
 import org.crmframework.core.minidao.test.dao.TestDao;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,38 +25,6 @@ import java.util.Map;
 public class CommonServiceImpl<T, PK extends Serializable> implements CommonService{
     @Resource
     public ICommonDao commonDao;
-    @Resource
-    public JdbcTemplate jdbcTemplate;
-    @Resource
-    public NamedParameterJdbcTemplate namedParameterJdbcTemplate;
-    @Resource
-    public MiniDaoFastQueryService miniDaoFastQueryService;
-    @Resource
-    public TestDao testDao;
-
-    public ICommonDao getCommonDao() {
-        return commonDao;
-    }
-
-    public void setCommonDao(ICommonDao commonDao) {
-        this.commonDao = commonDao;
-    }
-
-    public JdbcTemplate getJdbcTemplate() {
-        return jdbcTemplate;
-    }
-
-    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
-    public NamedParameterJdbcTemplate getNamedParameterJdbcTemplate() {
-        return namedParameterJdbcTemplate;
-    }
-
-    public void setNamedParameterJdbcTemplate(NamedParameterJdbcTemplate namedParameterJdbcTemplate) {
-        this.namedParameterJdbcTemplate = namedParameterJdbcTemplate;
-    }
 
     @Override
     public List test() {
@@ -73,6 +44,11 @@ public class CommonServiceImpl<T, PK extends Serializable> implements CommonServ
 //        MiniDaoPage<BaseEntity> miniDaoPage= testDao.findTest1List(1,10);
 //        MiniDaoPage<BaseEntity> miniDaoPage2= testDao.findTest2List(vo,1,10);
 //        return miniDaoPage2.getResults();
+    }
+
+    @Override
+    public <T> T getEntity(Class entityName, Serializable id) {
+        return commonDao.getEntity(entityName, id);
     }
 
     @Override
@@ -118,8 +94,70 @@ public class CommonServiceImpl<T, PK extends Serializable> implements CommonServ
     }
 
     @Override
-    public <T> T getEntity(Class entityName, Serializable id) {
-        return commonDao.getEntity(entityName, id);
+    public List<Map<String, Object>> findForNameJdbc(String sql, Map<String,Object> paramMap) {
+        return commonDao.findForNameJdbc(sql, paramMap);
+    }
+
+    @Override
+    public <T> Serializable save(T entity) {
+        try {
+            return commonDao.save(entity);
+        } catch (RuntimeException e) {
+            throw e;
+        }
+    }
+
+    @Override
+    public <T> void delete(T entity) {
+        try {
+            commonDao.delete(entity);
+        } catch (RuntimeException e) {
+            throw e;
+        }
+    }
+
+    @Override
+    public <T> void update(T pojo) {
+        commonDao.update(pojo);
+    }
+
+    @Override
+    public <T> void saveOrUpdate(T entity) {
+        try {
+            commonDao.saveOrUpdate(entity);
+        } catch (RuntimeException e) {
+            throw e;
+        }
+    }
+
+    @Override
+    public void jdbcUpdate(String sql, Object... obj){
+        commonDao.jdbcUpdate(sql,obj);
+    }
+
+    @Override
+    public void jdbcBatchUpdate(String sql, List<Object[]> batchArgs){
+        commonDao.jdbcBatchUpdate(sql,batchArgs);
+    }
+
+    @Override
+    public void nameJdbcUpdate(String sql, Map<String, Object> paramMap){
+        commonDao.nameJdbcUpdate(sql,paramMap);
+    }
+
+    @Override
+    public void nameJdbcUpdate(String sql, Object obj){
+        commonDao.nameJdbcUpdate(sql,obj);
+    }
+
+    @Override
+    public void nameJdbcBatchUpdate(String sql, Map<String, Object>[] paramMapArray){
+        commonDao.nameJdbcBatchUpdate(sql,paramMapArray);
+    }
+
+    @Override
+    public void nameJdbcBatchUpdate(String sql, List<Object> objList){
+        commonDao.nameJdbcBatchUpdate(sql,objList);
     }
 
 }
