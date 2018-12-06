@@ -10,4 +10,6 @@ public interface RoleService {
     MiniDaoPage<TSRole> findRoleList(TSRole role, int page, int rows);
 
     void updateRoleFunction(String roleId, List<String> functionIdList);
+
+    MiniDaoPage<TSRole> findRoleListByUserid(String userId, int page, int rows);
 }

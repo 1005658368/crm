@@ -45,5 +45,6 @@ public interface CommonService {
 
     void nameJdbcBatchUpdate(String sql, Map<String, Object>[] paramMapArray);
 
-    void nameJdbcBatchUpdate(String sql, List<Object> objList);
+    void nameJdbcBatchUpdate(String sql, List objList);
+
 }

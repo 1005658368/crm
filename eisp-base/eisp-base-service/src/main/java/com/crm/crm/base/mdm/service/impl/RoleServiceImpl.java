@@ -4,6 +4,7 @@ package com.crm.crm.base.mdm.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.crm.crm.base.mdm.dao.RoleDao;
 import com.crm.crm.base.mdm.entity.TSRole;
+import com.crm.crm.base.mdm.entity.TSUser;
 import com.crm.crm.base.mdm.service.RoleService;
 import com.crm.crm.common.vo.MiniDaoPage;
 import org.crmframework.core.common.service.impl.CommonServiceImpl;
@@ -59,6 +60,12 @@ public class RoleServiceImpl implements RoleService {
                 ;
         HashMap[] paramMapArray=needInsertMapList.toArray(new HashMap[needInsertMapList.size()]);
         systemService.nameJdbcBatchUpdate(insertSql,paramMapArray);
+    }
+
+    @Override
+    public MiniDaoPage<TSRole> findRoleListByUserid(String userId, int page, int rows) {
+        MiniDaoPage<TSRole> miniDaoPage=roleDao.findRoleListByUserid(userId,page,rows);
+        return miniDaoPage;
     }
 
 }

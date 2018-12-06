@@ -1,7 +1,13 @@
 package test;
 
+import com.crm.crm.base.mdm.entity.TSRole;
+import com.crm.crm.base.mdm.entity.TSUser;
 import com.crm.crm.base.mdm.service.FunctionService;
-import com.crm.crm.pojo.vo.TSFunctionVo;
+import com.crm.crm.base.mdm.service.RoleService;
+import com.crm.crm.base.mdm.service.UserService;
+import com.crm.crm.base.mdm.service.impl.RoleServiceImpl;
+import com.crm.crm.base.mdm.vo.TSFunctionVo;
+import com.crm.crm.common.vo.MiniDaoPage;
 import org.crmframework.core.common.service.CommonService;
 import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
 import org.crmframework.core.service.SystemService;
@@ -27,6 +33,11 @@ public class CTest {
     SystemService systemService;
     @Resource
     FunctionService functionService;
+    @Resource
+    RoleService roleServiceImpl;
+    @Resource
+    UserService userService;
+
     @Test
     public void Test1(){
         log.debug("cx1");
@@ -62,6 +73,7 @@ public class CTest {
 //        System.out.println(list2.size());
 
 
+/*
         List<TSFunctionVo> functionList=functionService.findFunctionByUserId("8a8249c75451b26b015451b5db770022");
         Map<String,Map<String,TSFunctionVo>> levelFunctionMap=new HashMap<String,Map<String,TSFunctionVo>>();
         for(TSFunctionVo vo:functionList){
@@ -96,7 +108,15 @@ public class CTest {
                 tlist1.removeAll(tlist2);
             }
         }
-
+*/
+//        TSRole role=new TSRole();
+//        role.setRoleName("管理员");
+//        MiniDaoPage<TSRole> miniDaoPage=roleServiceImpl.findRoleList(role,1,1000);
+        TSUser user=new TSUser();
+        user.setUserName("admin");
+        user.setMobilePhone("23456543234");
+        MiniDaoPage<TSUser> miniDaoPage=userService.findUserList(user,1,1000);
+        System.out.println(miniDaoPage.getResults().size());
         log.debug("cx2");
     }
 

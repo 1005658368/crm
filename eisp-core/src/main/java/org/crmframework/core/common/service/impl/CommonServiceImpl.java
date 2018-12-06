@@ -156,7 +156,7 @@ public class CommonServiceImpl<T, PK extends Serializable> implements CommonServ
     }
 
     @Override
-    public void nameJdbcBatchUpdate(String sql, List<Object> objList){
+    public void nameJdbcBatchUpdate(String sql, List objList){
         commonDao.nameJdbcBatchUpdate(sql,objList);
     }
 

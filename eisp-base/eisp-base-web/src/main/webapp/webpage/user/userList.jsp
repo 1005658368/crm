@@ -44,7 +44,7 @@
 	<%--<t:dgCol title="人员级别" field="employeepos"  width="80" query="false"></t:dgCol>--%>
 	<%--<t:dgCol title="上级职位" field="parentPosName"  width="80" query="false"></t:dgCol>--%>
 	<%--<t:dgCol title="上级姓名" field="parentPosUserName"  width="80" query="false"></t:dgCol>--%>
-	<t:dgCol title="common.status" sortable="true" field="status" replace="common.active_1,common.inactive_0,锁定_3"  width="50" query="false"></t:dgCol>
+	<%--<t:dgCol title="common.status" sortable="true" field="status" replace="common.active_1,common.inactive_0,锁定_3"  width="50" query="false"></t:dgCol>--%>
 	<%--<t:dgCol title="创建人" field="createBy" width="80" query="false"></t:dgCol>--%>
 	<%--<t:dgCol title="创建时间" field="createDate"  width="80" query="false"></t:dgCol>--%>
 	<%--<t:dgCol title="锁定时间" field="lockTime"  width="80" query="false"></t:dgCol>--%>
@@ -105,7 +105,8 @@
         <div style="height: 30px; padding-top: 10px;">
             <span style="float: left;">
                	<a id="TSBaseUser_add" href="#" class="easyui-linkbutton" plain="true" icon="icon-add" onclick="add('用户录入','userController.do?addorupdate','userList',null,null);">新建</a>
-				<a id="TSBaseUser_update" href="#" class="easyui-linkbutton" plain="true" icon="icon-edit" onclick="update('用户编辑','userController.do?update','userList',null,null);">修改</a>    
+				<a id="TSBaseUser_update" href="#" class="easyui-linkbutton" plain="true" icon="icon-edit" onclick="update('用户编辑','userController.do?addorupdate','userList',null,null);">修改</a>
+				<a id="TSBaseUser_role" href="#" class="easyui-linkbutton" plain="true" icon="icon-edit" onclick="update('分配角色','userController.do?userRole','userList','1000px',null);">分配角色</a>
 				<%--<a id="TSBaseUser_lockObj" href="#" class="easyui-linkbutton" plain="true" icon="icon-edit" onclick="lockObj('锁定用户','userController.do?lock','userList',null,null);">锁定</a>--%>
                	<%--<a id="TSBaseUser_unlockObj" href="#" class="easyui-linkbutton" plain="true" icon="icon-edit" onclick="unlockObj('解锁用户','userController.do?unlock','userList',null,null);">解锁</a>--%>
                	<%--<a id="TSBaseUser_editPostion" href="#" class="easyui-linkbutton" plain="true" icon="icon-edit" onclick="editPostion('职位分配','userController.do?editPostion','userList',null,null);">分配职位</a>             --%>

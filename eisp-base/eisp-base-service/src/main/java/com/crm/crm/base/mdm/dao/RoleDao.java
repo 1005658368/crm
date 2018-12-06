@@ -29,4 +29,14 @@ public interface RoleDao {
     @ResultType("com.crm.crm.base.mdm.entity.TSRole")
     public MiniDaoPage<TSRole> findRoleList(TSRole role, int page, int rows);
 
+    public static final String findRoleListByUserid =
+        " select r.* from t_s_role r join t_s_role_user ru on r.id=ru.roleid " +
+        " where 1=1 " +
+        " and ru.userid=:userId " +
+        " ";
+    @Sql(findRoleListByUserid)
+    @Arguments({"userId","page","rows"})
+    @ResultType("com.crm.crm.base.mdm.entity.TSRole")
+    public MiniDaoPage<TSRole> findRoleListByUserid(String userId, int page, int rows);
+
 }

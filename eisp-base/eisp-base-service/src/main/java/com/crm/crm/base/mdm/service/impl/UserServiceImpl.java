@@ -63,4 +63,7 @@ public class UserServiceImpl implements UserService{
         MiniDaoPage<TSUser> miniDaoPage=userDao.findUserList(user,page,rows);
         return miniDaoPage;
     }
+
+
+
 }

@@ -12,4 +12,6 @@ import java.util.List;
  */
 public interface SystemService extends CommonService {
     void setNoOptCode();
+
+    void initAllTypeGroups();
 }

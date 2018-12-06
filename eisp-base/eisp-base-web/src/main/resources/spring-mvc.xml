@@ -26,10 +26,15 @@
 	<bean id="mappingFastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
 		<property name="supportedMediaTypes">
 			<list>
-				 <value>text/html;charset=UTF-8</value>
+				<value>text/html;charset=UTF-8</value>
 				<value>text/plain;charset=UTF-8</value>
 				<value>application/json;charset=UTF-8</value>
 			</list>
+		</property>
+		<property name="features">
+			<array value-type="com.alibaba.fastjson.serializer.SerializerFeature">
+				<value>WriteMapNullValue</value>
+			</array>
 		</property>
 	</bean>
 
@@ -39,8 +44,8 @@
 		<property name="messageConverters">
 			<list>
 				<!-- json转换器 begin-->
-				<!--<ref bean="mappingJacksonHttpMessageConverter" />-->
-				<ref bean="mappingFastJsonHttpMessageConverter" />
+				<ref bean="mappingJacksonHttpMessageConverter" />
+				<!--<ref bean="mappingFastJsonHttpMessageConverter" />-->
 				<!-- json转换器 end-->
 			</list>
 		</property>
@@ -89,5 +94,5 @@
 	</bean>
 
 	<!--dubbo 扫描注解 多个package以,号分割且不能用*代替未知package -->
-	<dubbo:annotation package="com.crm.crm" />
+	<!--<dubbo:annotation package="com.crm.crm" />-->
 </beans>

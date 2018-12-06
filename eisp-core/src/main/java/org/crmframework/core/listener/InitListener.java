@@ -17,10 +17,13 @@ public class InitListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent event) {
         WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(event.getServletContext());
-//        SystemService systemService = (SystemService) webApplicationContext.getBean(SystemService.class);
+        SystemService systemService = (SystemService) webApplicationContext.getBean(SystemService.class);
         MutiLangServiceI mutiLangService = (MutiLangServiceI) webApplicationContext.getBean(MutiLangServiceI.class);
-//        CommonService commonService = (CommonService) webApplicationContext.getBean("commonServiceImpl");
-//        List list=commonService.test();
+        /**
+         * 第一部分：对数据字典进行缓存
+         */
+        systemService.initAllTypeGroups();
+
         /**
          * 第三部分：加载多语言内容
          */

@@ -10,5 +10,5 @@
             http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<import resource="dataSource.xml" />
-	<import resource="soa-consumer.xml"/>
+	<!--<import resource="soa-consumer.xml"/>-->
 </beans>

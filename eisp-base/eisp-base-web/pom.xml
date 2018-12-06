@@ -25,11 +25,11 @@
             <artifactId>eisp-base-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.cxl</groupId>-->
-            <!--<artifactId>eisp-base-service</artifactId>-->
-            <!--<version>${project.parent.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.cxl</groupId>
+            <artifactId>eisp-base-service</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
 
         <!-- web依赖包 -->
         <dependency>

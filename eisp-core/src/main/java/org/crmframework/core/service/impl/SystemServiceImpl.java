@@ -1,6 +1,8 @@
 package org.crmframework.core.service.impl;
 
 import com.crm.crm.base.mdm.entity.TSOperation;
+import com.crm.crm.base.mdm.entity.TSType;
+import com.crm.crm.base.mdm.entity.TSTypegroup;
 import com.crm.crm.base.mdm.entity.TSUser;
 import org.crmframework.core.common.service.impl.CommonServiceImpl;
 import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
@@ -51,5 +53,17 @@ public class SystemServiceImpl extends CommonServiceImpl implements SystemServic
         List<TSOperation> noauto_operationCodes=miniDaoFastQueryService.queryReturnMinidaoList(sql,paramMap,TSOperation.class);
         request.setAttribute("noauto_operationCodes",noauto_operationCodes);
     }
+
+
+    @Override
+    public void initAllTypeGroups() {
+        List<TSTypegroup> typeGroups = this.commonDao.loadAll(TSTypegroup.class);
+        for (TSTypegroup tsTypegroup : typeGroups) {
+            TSTypegroup.allTypeGroups.put(tsTypegroup.getTypegroupcode().toLowerCase(), tsTypegroup);
+            List<TSType> types = this.commonDao.findByProperty(TSType.class, "TSTypegroup.id", tsTypegroup.getId());
+            TSTypegroup.allTypes.put(tsTypegroup.getTypegroupcode().toLowerCase(), types);
+        }
+    }
+
 
 }

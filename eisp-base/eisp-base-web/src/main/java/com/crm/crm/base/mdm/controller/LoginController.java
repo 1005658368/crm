@@ -8,8 +8,11 @@ import com.crm.crm.base.mdm.service.UserService;
 import com.crm.crm.busi.test.service.TestService;
 import com.crm.crm.base.mdm.entity.TSUser;
 import com.crm.crm.base.mdm.vo.TSFunctionVo;
+import com.crm.crm.common.vo.Head;
+import com.crm.crm.common.vo.ResponseBean;
 import org.apache.commons.collections.CollectionUtils;
 import org.crmframework.core.common.service.CommonService;
+import org.crmframework.core.minidao.service.MiniDaoFastQueryService;
 import org.crmframework.core.service.SystemService;
 import org.crmframework.core.util.*;
 import org.crmframework.core.vo.AjaxJson;
@@ -40,6 +43,8 @@ public class LoginController {
     @Reference
     @Autowired(required = false)
     FunctionService functionService;
+    @Autowired
+    MiniDaoFastQueryService miniDaoFastQueryService;
 
     @RequestMapping(params = "test")
     public String test(){
@@ -59,6 +64,60 @@ public class LoginController {
         JSONObject jsonObject=JSONObject.parseObject(s);
         Map map=JSONObject.parseObject(s,HashMap.class);
         return map;
+    }
+
+    @RequestMapping(params = "test3")
+    @ResponseBody
+    public ResponseBean test3(String posId){
+        ResponseBean rar = new ResponseBean();
+        Head head = new Head();
+        try{
+            String sql="  select " +
+                    "        u.id, " +
+                    "        u.username as userName, " +
+                    "        up.pos_id as posId, " +
+                    "        tp.pos_name as posName, " +
+                    "        u.realname as realName, " +
+                    "        tpt.typename as employeepos  " +
+                    "    from " +
+                    "        t_s_base_user u  " +
+                    "    LEFT JOIN " +
+                    "        t_user_position up  " +
+                    "            on u.id =up.user_id  " +
+                    "    left join " +
+                    "        t_position tp  " +
+                    "            on tp.id=up.pos_id  " +
+                    "    left join " +
+                    "        t_position_type tpt  " +
+                    "            on tpt.id=tp.pos_type_id  " +
+                    "    where " +
+                    "        to_char(SYSDATE,'yyyy-MM-dd') BETWEEN up.begin_date and up.end_date  " +
+                    "        and up.pos_id in ( " +
+                    "            select " +
+                    "                id  " +
+                    "            from " +
+                    "                t_position  " +
+                    "              where id!='356f9b3269893c97e0534bc9020a2587'  start with id='356f9b3269893c97e0534bc9020a2587' connect  " +
+                    "            by " +
+                    "                prior id=parent_pos_id  " +
+                    "                " +
+                    "        )  " +
+                    "    order by " +
+                    "        tpt.typename desc, " +
+                    "        u.realname asc"
+                    ;
+            List<TSUser> users = miniDaoFastQueryService.queryReturnMinidaoList(sql,null,TSUser.class);
+            //排除
+            head.setCode(100);
+            head.setMessage("获取用户数据成功");
+            rar.setBusinessObject(users);
+        }catch(Exception e){
+            head.setCode(103);
+            head.setMessage("获取用户数据失败");
+            e.printStackTrace();
+        }
+        rar.setHead(head);
+        return rar;
     }
 
     /**
